@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us – BoxifyPack</title>
+  <meta name="description" content="Contact BoxifyPack for a free sample box or quote. We reply within 24 hours on business days.">
+  <meta name="keywords" content="contact BoxifyPack, packaging inquiry, request sample, get quote">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%232d6a5f'/><text x='50' y='68' font-size='52' font-weight='bold' text-anchor='middle' fill='white' font-family='sans-serif'>B</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="page-contact">
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">Boxify<span>Pack</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-dropdown-toggle">Products</a>
+          <div class="nav-dropdown-menu">
+            <a href="products/food.html">Food &amp; Confectionery</a>
+            <a href="products/health-beauty.html">Health &amp; Beauty</a>
+            <a href="products/pharma.html">Pharma &amp; Supplements</a>
+            <a href="products/gift.html">Gift Box</a>
+          </div>
+        </div>
+        <a href="custom-packaging.html">Custom Packaging</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-intro">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Request a free sample box or get a quote – we reply within 24 hours on business days.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <form class="contact-form" action="#" method="POST">
+          <label for="name">Your Name *</label>
+          <input type="text" id="name" name="name" required placeholder="John Smith">
+
+          <label for="company">Company Name</label>
+          <input type="text" id="company" name="company" placeholder="Acme Supplements Inc.">
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required placeholder="john@company.com">
+
+          <label for="product-type">Product Type</label>
+          <select id="product-type" name="product_type">
+            <option value="">-- Select --</option>
+            <option value="food">Food &amp; Confectionery Box</option>
+            <option value="health-beauty">Health &amp; Beauty Box</option>
+            <option value="pharma">Pharma &amp; Supplement Box</option>
+            <option value="gift">Gift Box</option>
+          </select>
+
+          <label for="quantity">Estimated Quantity</label>
+          <input type="text" id="quantity" name="quantity" placeholder="e.g. 10,000 pcs">
+
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" required placeholder="Tell us about your project – size, material, printing, timeline..."></textarea>
+
+          <div class="file-upload">
+            <label for="design-file">Upload Design File (AI/PDF/ZIP)</label>
+            <input type="file" id="design-file" name="design-file" accept=".pdf,.ai,.zip">
+            <small>Accepted formats: .pdf, .ai, .zip (max 10MB)</small>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="sample" name="request_sample" value="yes">
+            <label for="sample">I want to request a physical sample</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Inquiry</button>
+        </form>
+
+        <div>
+          <div class="contact-info-item">
+            <h3><i class="fa-solid fa-envelope"></i> Email</h3>
+            <p><a href="mailto:sales@boxifypack.com">sales@boxifypack.com</a></p>
+          </div>
+          <div class="contact-info-item">
+            <h3><i class="fa-brands fa-whatsapp"></i> WhatsApp</h3>
+            <p><a href="https://wa.me/861234567">+86 123 4567</a></p>
+          </div>
+          <div class="contact-info-item">
+            <h3><i class="fa-solid fa-clock"></i> Response Time</h3>
+            <p>We reply within 24 hours on business days.</p>
+          </div>
+          <div class="contact-info-item" style="margin-top:2rem; padding:24px; background:var(--bg-alt); border-radius:var(--radius);">
+            <h3 style="margin-bottom:.5rem;">Quick Checklist for Your Inquiry</h3>
+            <ul style="font-size:.9rem; color:var(--text-light); line-height:2;">
+              <li>Box dimensions (L × W × H)</li>
+              <li>Paperboard material &amp; weight</li>
+              <li>Printing colors &amp; finish</li>
+              <li>Order quantity</li>
+              <li>Destination country</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Payment Methods -->
+  <section class="section section-alt">
+    <div class="container text-center">
+      <h2 class="section-title">Global Payment Options</h2>
+      <p class="section-subtitle" style="margin-left:auto;margin-right:auto;">We support multiple payment methods for international clients.</p>
+      <div class="payment-methods">
+        <span class="payment-badge"><i class="fa-brands fa-cc-visa" style="color:#1a1f71;"></i> Visa</span>
+        <span class="payment-badge"><i class="fa-brands fa-cc-mastercard" style="color:#eb001b;"></i> Mastercard</span>
+        <span class="payment-badge"><i class="fa-brands fa-paypal" style="color:#003087;"></i> PayPal</span>
+        <span class="payment-badge"><i class="fa-solid fa-money-bill-transfer" style="color:#163300;"></i> Wise</span>
+        <span class="payment-badge"><i class="fa-brands fa-stripe-s" style="color:#635bff;"></i> Stripe</span>
+        <span class="payment-badge"><i class="fa-solid fa-building-columns" style="color:#2d6a5f;"></i> Bank Transfer (T/T)</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col"><h4>BoxifyPack</h4><p>A reliable packaging sourcing partner focused on USA &amp; European markets.</p></div>
+        <div class="footer-col"><h4>Products</h4><p><a href="products/food.html">Food &amp; Confectionery</a></p><p><a href="products/health-beauty.html">Health &amp; Beauty</a></p><p><a href="products/pharma.html">Pharma &amp; Supplements</a></p><p><a href="products/gift.html">Gift Box</a></p></div>
+        <div class="footer-col"><h4>Company</h4><p><a href="custom-packaging.html">Custom Packaging</a></p><p><a href="about.html">About Us</a></p><p><a href="blog.html">Blog</a></p><p><a href="contact.html">Contact</a></p></div>
+        <div class="footer-col"><h4>Contact</h4><p><a href="mailto:sales@boxifypack.com">sales@boxifypack.com</a></p><p><a href="https://wa.me/861234567">+86 123 4567</a></p></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BoxifyPack. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://linkedin.com/company/boxifypack" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://facebook.com/boxifypack" target="_blank" rel="noopener" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com/boxifypack" target="_blank" rel="noopener" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com/boxifypack" target="_blank" rel="noopener" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://youtube.com/@boxifypack" target="_blank" rel="noopener" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="float-buttons">
+    <a href="contact.html?sample=true" class="float-btn float-btn-sample" title="Request Free Sample"><i class="fa-solid fa-box-open"></i><span class="float-btn-label">Free Sample</span></a>
+    <a href="https://wa.me/861234567" class="float-btn float-btn-contact" target="_blank" rel="noopener" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span class="float-btn-label">WhatsApp</span></a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
