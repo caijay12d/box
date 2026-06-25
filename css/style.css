@@ -142,6 +142,12 @@ ul,ol { list-style:none; }
 .hero-grid-card:hover .hero-grid-overlay {
   background: linear-gradient(to top, rgba(45,106,95,.9) 0%, rgba(45,106,95,.35) 50%, rgba(45,106,95,.15) 100%);
 }
+.hero-grid-card:hover .hero-grid-content h2 {
+  text-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+.hero-grid-card:hover .hero-grid-content p {
+  text-shadow: 0 1px 4px rgba(0,0,0,.3);
+}
 .hero-grid-content {
   position: relative;
   z-index: 1;
