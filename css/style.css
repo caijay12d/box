@@ -133,6 +133,14 @@ ul,ol { list-style:none; }
   transform: scale(1.03);
   z-index: 2;
 }
+.hero-grid-card:hover .hero-grid-content h2 {
+  text-shadow: 
+    -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff,
+    0 0 8px rgba(255,255,255,.5);
+}
 .hero-grid-overlay {
   position: absolute;
   inset: 0;
@@ -154,11 +162,6 @@ ul,ol { list-style:none; }
   margin-bottom: .5rem;
   line-height: 1.2;
   letter-spacing:-.01em;
-  -webkit-text-stroke: 0 transparent;
-  transition: -webkit-text-stroke .3s ease;
-}
-.hero-grid-card:hover .hero-grid-content h2 {
-  -webkit-text-stroke: 1.5px #fff;
 }
 .hero-grid-content p {
   font-size: .98rem;
