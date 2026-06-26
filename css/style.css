@@ -142,12 +142,6 @@ ul,ol { list-style:none; }
 .hero-grid-card:hover .hero-grid-overlay {
   background: linear-gradient(to top, rgba(45,106,95,.9) 0%, rgba(45,106,95,.35) 50%, rgba(45,106,95,.15) 100%);
 }
-.hero-grid-card:hover .hero-grid-content h2 {
-  text-shadow: -2px -2px 0 var(--primary), 2px -2px 0 var(--primary), -2px 2px 0 var(--primary), 2px 2px 0 var(--primary);
-}
-.hero-grid-card:hover .hero-grid-content p {
-  text-shadow: -1px -1px 0 var(--primary), 1px -1px 0 var(--primary), -1px 1px 0 var(--primary), 1px 1px 0 var(--primary);
-}
 .hero-grid-content {
   position: relative;
   z-index: 1;
@@ -162,12 +156,19 @@ ul,ol { list-style:none; }
   letter-spacing:-.01em;
   transition: text-shadow .3s ease;
 }
+.hero-grid-card:hover .hero-grid-content h2 {
+  text-shadow:
+    -1.5px -1.5px 0 #fff,
+    1.5px -1.5px 0 #fff,
+    -1.5px 1.5px 0 #fff,
+    1.5px 1.5px 0 #fff,
+    0 0 8px rgba(255,255,255,.5);
+}
 .hero-grid-content p {
   font-size: .98rem;
   color: rgba(255,255,255,.85);
   margin-bottom: 1.4rem;
   font-weight:300;
-  transition: text-shadow .3s ease;
 }
 .btn-hero {
   background: transparent;
