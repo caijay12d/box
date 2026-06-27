@@ -99,12 +99,15 @@ ul,ol { list-style:none; }
 .nav-dropdown-toggle::after { content:'▾'; font-size:.7em; transition:transform var(--transition); }
 .nav-dropdown.open .nav-dropdown-toggle::after { transform:rotate(180deg); }
 .nav-dropdown.open .nav-dropdown-toggle { background:rgba(255,255,255,.1); color:#fff; }
+.nav-dropdown:hover .nav-dropdown-toggle { background:rgba(255,255,255,.1); color:#fff; }
+.nav-dropdown:hover .nav-dropdown-toggle::after { transform:rotate(180deg); }
 .nav-dropdown-menu {
   display:none; position:absolute; top:100%; left:0;
   background:#fff; border:1px solid var(--border); border-radius:var(--radius); padding:6px;
   min-width:220px; box-shadow:var(--shadow-hover); z-index:100;
 }
 .nav-dropdown.open .nav-dropdown-menu { display:block; }
+.nav-dropdown:hover .nav-dropdown-menu { display:block; }
 .nav-dropdown-menu a { display:block; padding:10px 14px; font-size:.88rem; border-radius:4px; color:var(--text); }
 .nav-dropdown-menu a:hover { background:var(--bg-alt); color:var(--accent); }
 
@@ -133,14 +136,6 @@ ul,ol { list-style:none; }
   transform: scale(1.03);
   z-index: 2;
 }
-.hero-grid-card:hover .hero-grid-content h2 {
-  text-shadow: 
-    -2px -2px 0 #fff,
-    2px -2px 0 #fff,
-    -2px 2px 0 #fff,
-    2px 2px 0 #fff,
-    0 0 8px rgba(255,255,255,.5);
-}
 .hero-grid-overlay {
   position: absolute;
   inset: 0;
@@ -162,6 +157,8 @@ ul,ol { list-style:none; }
   margin-bottom: .5rem;
   line-height: 1.2;
   letter-spacing:-.01em;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,.2);
 }
 .hero-grid-content p {
   font-size: .98rem;
@@ -233,7 +230,7 @@ ul,ol { list-style:none; }
 .advantage-item p { font-size:.88rem; color:var(--text-light); }
 
 /* ---------- SBS Section ---------- */
-.sbs-section { background:var(--bg-alt); padding:60px 0; text-align:center; }
+.sbs-section { background:var(--bg); padding:60px 0; text-align:center; }
 .sbs-section p { max-width:720px; margin:0 auto; color:var(--text-light); font-size:1.05rem; line-height:1.8; }
 
 /* ---------- Trust Badges ---------- */
