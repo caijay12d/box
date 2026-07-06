@@ -1,0 +1,43 @@
+/* ============================================
+   Scheme C: Terracotta Warm (陶土温暖)
+   应用方式: 在 HTML 中 style.css 之后加载
+   <link rel="stylesheet" href="css/theme-terracotta.css">
+   ============================================ */
+
+:root {
+  --primary: #8b3a2e;
+  --primary-light: #c2613f;
+  --accent: #c2613f;
+  --accent-light: #d4825f;
+  --accent-dark: #8b3a2e;
+  --cta: #6a4f0a;
+  --cta-dark: #4f3a06;
+  --bg: #ffffff;
+  --bg-alt: #fbf7f3;
+  --bg-soft: #f7f1ed;
+  --text: #2a1f1c;
+  --text-light: #6b5d57;
+  --border: #ede2db;
+  --shadow-hover: 0 14px 40px rgba(139,58,46,.14);
+  --shadow-soft: 0 4px 20px rgba(139,58,46,.06);
+}
+
+/* 覆盖主 CSS 中硬编码的 rgba */
+.btn-primary:hover { box-shadow:0 8px 22px rgba(106,79,10,.4); }
+.hero-grid-overlay {
+  background: linear-gradient(to top, rgba(139,58,46,.85) 0%, rgba(139,58,46,.3) 50%, rgba(139,58,46,.1) 100%);
+}
+.hero-grid-card:hover .hero-grid-overlay {
+  background: linear-gradient(to top, rgba(139,58,46,.9) 0%, rgba(139,58,46,.35) 50%, rgba(139,58,46,.15) 100%);
+}
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+  box-shadow:0 0 0 3px rgba(194,97,63,.15);
+}
+.quote-popup-form input:focus, .quote-popup-form select:focus, .quote-popup-form textarea:focus {
+  box-shadow:0 0 0 3px rgba(194,97,63,.15);
+}
+.form-success-overlay, .quote-popup-overlay { background:rgba(42,31,28,.55) !important; }
+.back-to-top { box-shadow:0 4px 16px rgba(139,58,46,.3); }
+
+/* Reading progress bar gradient */
+.reading-progress { background:linear-gradient(90deg, var(--accent), var(--cta)) !important; }

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a5276"/>
+      <stop offset="100%" style="stop-color:#2980b9"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="url(#g5)"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.5"/>
+  <!-- Magnifying glass -->
+  <circle cx="88" cy="84" r="30" fill="none" stroke="#fff" stroke-width="4" opacity=".85"/>
+  <line x1="108" y1="104" x2="135" y2="131" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+  <path d="M76 82 L86 92 L104 72" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="170" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="1">QC</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5b2c6f"/>
+      <stop offset="100%" style="stop-color:#8e44ad"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="url(#g4)"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.5"/>
+  <!-- Handshake icon -->
+  <path d="M52 88 L78 72 L100 90 L122 72 L148 88" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
+  <path d="M78 88 L100 105 L122 88" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
+  <text x="100" y="165" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="3">SEDEX</text>
+</svg>

@@ -1,0 +1,43 @@
+/* ============================================
+   Scheme B: Ocean Premium (海洋高端)
+   应用方式: 在 HTML 中 style.css 之后加载
+   <link rel="stylesheet" href="css/theme-ocean.css">
+   ============================================ */
+
+:root {
+  --primary: #1e3a5f;
+  --primary-light: #2d6a9e;
+  --accent: #2d6a9e;
+  --accent-light: #4a86b8;
+  --accent-dark: #1e3a5f;
+  --cta: #8a4f24;
+  --cta-dark: #6e3d1a;
+  --bg: #ffffff;
+  --bg-alt: #f5f9fc;
+  --bg-soft: #eef2f8;
+  --text: #1a2530;
+  --text-light: #5a6878;
+  --border: #e5ebf2;
+  --shadow-hover: 0 14px 40px rgba(30,58,95,.14);
+  --shadow-soft: 0 4px 20px rgba(30,58,95,.06);
+}
+
+/* 覆盖主 CSS 中硬编码的 rgba */
+.btn-primary:hover { box-shadow:0 8px 22px rgba(138,79,36,.4); }
+.hero-grid-overlay {
+  background: linear-gradient(to top, rgba(30,58,95,.85) 0%, rgba(30,58,95,.3) 50%, rgba(30,58,95,.1) 100%);
+}
+.hero-grid-card:hover .hero-grid-overlay {
+  background: linear-gradient(to top, rgba(30,58,95,.9) 0%, rgba(30,58,95,.35) 50%, rgba(30,58,95,.15) 100%);
+}
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+  box-shadow:0 0 0 3px rgba(45,106,158,.15);
+}
+.quote-popup-form input:focus, .quote-popup-form select:focus, .quote-popup-form textarea:focus {
+  box-shadow:0 0 0 3px rgba(45,106,158,.15);
+}
+.form-success-overlay, .quote-popup-overlay { background:rgba(26,37,48,.55) !important; }
+.back-to-top { box-shadow:0 4px 16px rgba(30,58,95,.3); }
+
+/* Reading progress bar gradient */
+.reading-progress { background:linear-gradient(90deg, var(--accent), var(--cta)) !important; }

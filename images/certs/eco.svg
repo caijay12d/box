@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="g6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d8348"/>
+      <stop offset="100%" style="stop-color:#27ae60"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="url(#g6)"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.5"/>
+  <!-- Recycle arrows -->
+  <path d="M72 85 L62 100 L76 100 L68 120 L82 105 L66 105 Z" fill="#fff" opacity=".85"/>
+  <path d="M128 105 L138 90 L124 90 L132 70 L118 85 L134 85 Z" fill="#fff" opacity=".85"/>
+  <path d="M100 60 L86 72 L94 72 L80 92 L96 80 L92 80 L108 60 L112 72 L108 72 L120 92 L104 80 L108 80 Z" fill="#fff" opacity=".75"/>
+  <text x="100" y="165" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2">ECO</text>
+</svg>

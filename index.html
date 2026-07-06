@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%232d6a5f'/><text x='50' y='68' font-size='52' font-weight='bold' text-anchor='middle' fill='white' font-family='sans-serif'>B</text></svg>">
+  <link rel="icon" type="image/png" href="images/logo/favicon-with-bg.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="page-index">
@@ -22,7 +22,9 @@
   <!-- Header -->
   <header class="site-header">
     <nav class="navbar">
-      <a href="index.html" class="nav-logo">Boxify<span>Pack</span></a>
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo/logo (1).png" alt="BoxifyPack" class="nav-logo-img">
+      </a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
       <div class="nav-links">
         <a href="index.html">Home</a>
@@ -42,6 +44,36 @@
       </div>
     </nav>
   </header>
+
+  <!-- Brand Hero -->
+  <section class="brand-hero">
+    <div class="brand-hero-bg" style="background-image:url('images/123.jpg')"></div>
+    <div class="brand-hero-overlay"></div>
+    <div class="brand-hero-content container">
+      <span class="brand-hero-eyebrow"><i class="fa-solid fa-leaf"></i> FSC-Certified · FDA/EU Compliant · Direct Export</span>
+      <h1 class="brand-hero-title">Premium Paper Boxes.<br><span>Built for Global Brands.</span></h1>
+      <p class="brand-hero-sub">Custom SBS paperboard packaging for food, pharma, health &amp; beauty, and gifts. Factory-direct pricing, fast samples in 7 days, 3-layer QC, and door-to-door logistics to USA &amp; Europe.</p>
+      <div class="brand-hero-cta">
+        <a href="contact.html?quote=true" class="btn btn-primary btn-lg">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="contact.html?sample=true" class="btn btn-outline btn-lg">Request Free Sample</a>
+      </div>
+      <div class="brand-hero-trust">
+        <div class="hero-trust-item"><strong>14yrs</strong><span>Export Experience</span></div>
+        <div class="hero-trust-divider"></div>
+        <div class="hero-trust-item"><strong>40+</strong><span>Countries Served</span></div>
+        <div class="hero-trust-divider"></div>
+        <div class="hero-trust-item"><strong>99%</strong><span>On-Time Delivery</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Categories Grid -->
+  <section class="section text-center">
+    <div class="container">
+      <h2 class="section-title">Packaging Solutions by Industry</h2>
+      <p class="section-subtitle">Select a category to explore materials, finishes, and certified options.</p>
+    </div>
+  </section>
 
   <!-- Hero Product Grid -->
   <section class="hero-grid">
@@ -80,10 +112,10 @@
   </section>
 
   <!-- Advantages (Number Cards) -->
-  <section class="section section-alt">
+  <section class="section section-alt text-center">
     <div class="container">
-      <h2 class="section-title text-center">Why Brands Choose BoxifyPack</h2>
-      <p class="section-subtitle text-center">Reliable supply chain, consistent quality, and responsive service.</p>
+      <h2 class="section-title">Why Brands Choose BoxifyPack</h2>
+      <p class="section-subtitle">Reliable supply chain, consistent quality, and responsive service.</p>
       <div class="stats-grid">
         <div class="stat-card">
           <div class="stat-number">24h</div>
@@ -121,17 +153,34 @@
 
   <!-- SBS Section -->
   <section class="sbs-section">
-    <div class="container">
-      <h2 class="section-title" style="margin-bottom:1rem;">Solid Bleached Sulfate (SBS) Paperboard</h2>
-      <p>Our solid bleached sulfate (SBS) paperboard offers superior print sharpness, rigidity, and food-contact safety. Ideal for pharmaceutical and cosmetic packaging.</p>
+    <div class="container sbs-grid">
+      <div class="sbs-visual">
+        <img src="images/about/pexels-michaela-st-34.jpg" alt="SBS paperboard quality inspection" loading="lazy">
+        <div class="sbs-visual-badge">
+          <i class="fa-solid fa-certificate"></i>
+          <span>Food-Contact<br>Grade A</span>
+        </div>
+      </div>
+      <div class="sbs-content">
+        <span class="section-eyebrow">Core Material</span>
+        <h2 class="section-title">Solid Bleached Sulfate (SBS) Paperboard</h2>
+        <p>Our premium SBS paperboard delivers superior print sharpness, structural rigidity, and food-contact safety. The bright white surface maximizes ink vibrancy for premium brand presentation.</p>
+        <ul class="sbs-features">
+          <li><i class="fa-solid fa-check-circle"></i> <strong>Brightness 90+ GT</strong> — brilliant white surface for vivid print reproduction</li>
+          <li><i class="fa-solid fa-check-circle"></i> <strong>Density 0.82 g/cm³</strong> — stiff, rigid structure for premium feel</li>
+          <li><i class="fa-solid fa-check-circle"></i> <strong>Caliper 250–450 gsm</strong> — versatile weights for any box format</li>
+          <li><i class="fa-solid fa-check-circle"></i> <strong>FDA 21 CFR</strong> compliant — direct food contact approved</li>
+        </ul>
+        <a href="blog/sbs-vs-kraft-paperboard.html" class="btn btn-outline">Compare SBS vs Kraft <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
     </div>
   </section>
 
   <!-- Sustainability Section -->
-  <section class="section section-alt">
+  <section class="section section-alt text-center">
     <div class="container">
-      <h2 class="section-title text-center">Sustainable Materials &amp; Green Manufacturing</h2>
-      <p class="section-subtitle text-center">Eco-friendly packaging that meets global environmental standards.</p>
+      <h2 class="section-title">Sustainable Materials &amp; Green Manufacturing</h2>
+      <p class="section-subtitle">Eco-friendly packaging that meets global environmental standards.</p>
       <div class="sustainability-grid">
         <div class="sustain-card">
           <div class="sustain-icon"><i class="fa-solid fa-tree"></i></div>
@@ -158,24 +207,79 @@
   </section>
 
   <!-- Trust Badges -->
-  <section class="section">
+  <section class="section text-center">
     <div class="container">
-      <h2 class="section-title text-center">Trusted &amp; Certified</h2>
-      <p class="section-subtitle text-center">Compliance and quality you can rely on.</p>
-      <div class="trust-badges">
-        <span class="trust-badge"><i class="fa-solid fa-shield-halved"></i> FDA/EU Compliance Support</span>
-        <span class="trust-badge"><i class="fa-solid fa-tree"></i> FSC-Certified Available</span>
-        <span class="trust-badge"><i class="fa-solid fa-handshake"></i> Sedex Members</span>
-        <span class="trust-badge"><i class="fa-solid fa-magnifying-glass"></i> 3-Layer Quality Inspection</span>
+      <h2 class="section-title">Trusted &amp; Certified</h2>
+      <p class="section-subtitle">Compliance and quality you can rely on.</p>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <img src="images/certs/fsc.svg" alt="FSC Certified" width="96" height="96" loading="lazy">
+          <h4>FSC Certified</h4>
+          <p>Responsible forest management &amp; full traceability</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/certs/iso.svg" alt="ISO 9001" width="96" height="96" loading="lazy">
+          <h4>ISO 9001</h4>
+          <p>Certified factory quality management system</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/certs/fda.svg" alt="FDA/EU Compliant" width="96" height="96" loading="lazy">
+          <h4>FDA / EU Compliant</h4>
+          <p>Food-contact &amp; pharmaceutical grade approved</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/certs/sedex.svg" alt="Sedex Member" width="96" height="96" loading="lazy">
+          <h4>Sedex Member</h4>
+          <p>Ethical trade &amp; responsible supply chain practices</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/certs/qc.svg" alt="3-Layer QC" width="96" height="96" loading="lazy">
+          <h4>3-Layer QC</h4>
+          <p>Material, in-line &amp; pre-shipment inspection</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/certs/eco.svg" alt="Eco Certified" width="96" height="96" loading="lazy">
+          <h4>Eco Certified</h4>
+          <p>Soy-based inks &amp; plastic-free coatings</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Teaser -->
+  <section class="process-teaser-section">
+    <div class="container">
+      <h2 class="section-title" style="color:#fff;">How We Work</h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,.7); margin-left:auto; margin-right:auto;">A streamlined process from inquiry to delivery.</p>
+      <div class="process-teaser-grid">
+        <div class="process-teaser-step">
+          <div class="process-teaser-icon"><i class="fa-solid fa-comments"></i></div>
+          <h4>Inquiry &amp; Design</h4>
+        </div>
+        <div class="process-teaser-step">
+          <div class="process-teaser-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h4>Sample Approval</h4>
+        </div>
+        <div class="process-teaser-step">
+          <div class="process-teaser-icon"><i class="fa-solid fa-industry"></i></div>
+          <h4>Mass Production</h4>
+        </div>
+        <div class="process-teaser-step">
+          <div class="process-teaser-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+          <h4>QC &amp; Shipment</h4>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:36px;">
+        <a href="custom-packaging.html" class="btn btn-white">View Full Process <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
 
   <!-- Testimonials -->
-  <section class="section section-alt">
+  <section class="section section-alt text-center">
     <div class="container">
-      <h2 class="section-title text-center">What Our Clients Say</h2>
-      <p class="section-subtitle text-center">Trusted by brands across the USA, Europe, and beyond.</p>
+      <h2 class="section-title">What Our Clients Say</h2>
+      <p class="section-subtitle">Trusted by brands across the USA, Europe, and beyond.</p>
       <div class="testimonials-grid">
         <div class="testimonial-card">
           <div class="testimonial-header">
@@ -185,7 +289,7 @@
           <p class="testimonial-text">"BoxifyPack delivered exactly what they promised. The SBS cartons for our supplement line were perfect — crisp printing, sturdy construction, and full CR compliance. Samples arrived in 6 days. Will order again."</p>
           <div class="testimonial-author">
             <div class="author-avatar">
-              <img src="images/testimonials/michael-carter.jpg" alt="Sarah Mitchell">
+              <img src="images/testimonials/sarah-mitchell.jpg" alt="Sarah Mitchell">
               <span class="country-badge" title="USA">🇺🇸</span>
             </div>
             <div>
@@ -202,7 +306,7 @@
           <p class="testimonial-text">"We switched from a European supplier to BoxifyPack and saved 40% on our gift box orders with zero quality drop. Their team responds within hours and the FSC certification was a big plus for our brand."</p>
           <div class="testimonial-author">
             <div class="author-avatar">
-              <img src="images/testimonials/kazuo-watanabe.jpg" alt="Takeshi Yamamoto">
+              <img src="images/testimonials/takeshi-yamamoto.jpg" alt="Takeshi Yamamoto">
               <span class="country-badge" title="Japan">🇯🇵</span>
             </div>
             <div>
@@ -219,7 +323,7 @@
           <p class="testimonial-text">"Excellent communication and flexibility. They customized our chocolate box dieline perfectly and the soft-touch finish looked premium. International shipping was smooth. Highly recommended!"</p>
           <div class="testimonial-author">
             <div class="author-avatar">
-              <img src="images/testimonials/ricardo-oliveira.jpg" alt="Ana Carolina Silva">
+              <img src="images/testimonials/ana-carolina-silva.jpg" alt="Ana Carolina Silva">
               <span class="country-badge" title="Brazil">🇧🇷</span>
             </div>
             <div>
@@ -246,8 +350,17 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <h4>BoxifyPack</h4>
+          <div class="footer-logo">
+            <img src="images/logo/logo (1).png" alt="BoxifyPack" class="footer-logo-img">
+          </div>
           <p>A reliable packaging sourcing partner focused on USA &amp; European markets. Custom SBS paperboard boxes for food, health, beauty, and gifts.</p>
+          <div class="footer-social" style="margin-top:12px;">
+            <a href="https://linkedin.com/company/boxifypack" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://facebook.com/boxifypack" target="_blank" rel="noopener" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com/boxifypack" target="_blank" rel="noopener" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/boxifypack" target="_blank" rel="noopener" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://youtube.com/@boxifypack" target="_blank" rel="noopener" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
         </div>
         <div class="footer-col">
           <h4>Products</h4>
@@ -267,17 +380,16 @@
           <h4>Contact</h4>
           <p><a href="mailto:sales@boxifypack.com">sales@boxifypack.com</a></p>
           <p><a href="https://wa.me/861234567">+86 123 4567</a></p>
+          <div class="footer-payments" style="margin-top:12px;">
+            <i class="fa-brands fa-cc-visa" title="Visa"></i>
+            <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+            <i class="fa-brands fa-cc-paypal" title="PayPal"></i>
+            <i class="fa-solid fa-building-columns" title="Bank Transfer"></i>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 BoxifyPack. All rights reserved.</p>
-        <div class="footer-social">
-          <a href="https://linkedin.com/company/boxifypack" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://facebook.com/boxifypack" target="_blank" rel="noopener" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://instagram.com/boxifypack" target="_blank" rel="noopener" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://twitter.com/boxifypack" target="_blank" rel="noopener" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://youtube.com/@boxifypack" target="_blank" rel="noopener" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-        </div>
+      <div class="footer-bottom" style="text-align:center;">
+        <p style="width:100%;">&copy; 2026 BoxifyPack. All rights reserved.</p>
       </div>
     </div>
   </footer>

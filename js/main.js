@@ -41,6 +41,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Highlight Current Page ---------- */
   const pagePath = window.location.pathname;
+
+  // Check if we're on a product subpage
+  const isProductPage = pagePath.includes('/products/');
+  if (isProductPage) {
+    // Activate Products dropdown toggle
+    const productsToggle = document.querySelector('.nav-dropdown-toggle');
+    if (productsToggle && productsToggle.textContent.trim() === 'Products') {
+      productsToggle.classList.add('active');
+    }
+  }
+
   document.querySelectorAll('.nav-links a:not(.nav-dropdown-toggle)').forEach(link => {
     const href = link.getAttribute('href');
     if (!href || href === '#') return;
@@ -270,5 +281,95 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
     });
   }
+
+  /* ---------- Page Fade-in ---------- */
+  requestAnimationFrame(() => {
+    document.body.classList.add('loaded');
+  });
+
+  /* ---------- Reading Progress Bar ---------- */
+  const progressBar = document.createElement('div');
+  progressBar.className = 'reading-progress';
+  document.body.appendChild(progressBar);
+
+  const updateProgress = () => {
+    const st = document.documentElement.scrollTop || document.body.scrollTop;
+    const sh = (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+    const pct = sh > 0 ? (st / sh) * 100 : 0;
+    progressBar.style.width = pct + '%';
+  };
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+
+  /* ---------- Back to Top Button ---------- */
+  const backToTop = document.createElement('button');
+  backToTop.className = 'back-to-top';
+  backToTop.setAttribute('aria-label', 'Back to top');
+  backToTop.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
+  document.body.appendChild(backToTop);
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  const toggleBackToTop = () => {
+    const floatButtons = document.querySelector('.float-buttons');
+    if (window.scrollY > 400) {
+      backToTop.classList.add('visible');
+      if (floatButtons) floatButtons.classList.add('shifted');
+    } else {
+      backToTop.classList.remove('visible');
+      if (floatButtons) floatButtons.classList.remove('shifted');
+    }
+  };
+  window.addEventListener('scroll', toggleBackToTop, { passive: true });
+  toggleBackToTop();
+
+  /* ---------- Scroll Reveal Animations ---------- */
+  // Auto-add reveal classes to common block elements
+  const revealSelectors = [
+    '.section-title', '.section-subtitle',
+    '.product-card', '.card', '.blog-card', '.stat-card', '.sustain-card', '.testimonial-card',
+    '.faq-item', '.timeline-step', '.advantage-item', '.trust-badge', '.subcat-tag',
+    '.about-content', '.contact-info-item', '.contact-form'
+  ];
+  document.querySelectorAll(revealSelectors.join(',')).forEach(el => {
+    if (!el.classList.contains('reveal')) el.classList.add('reveal');
+  });
+
+  // Stagger grid children
+  ['card-grid', 'blog-grid', 'stats-grid', 'sustainability-grid', 'testimonials-grid', 'advantages-grid'].forEach(cls => {
+    document.querySelectorAll('.' + cls).forEach(grid => {
+      Array.from(grid.children).forEach((child, i) => {
+        if (i < 6) child.setAttribute('data-delay', String(i + 1));
+      });
+    });
+  });
+
+  // About/contact two-column reveals
+  document.querySelectorAll('.about-content').forEach(grid => {
+    const cols = grid.children;
+    if (cols[0]) cols[0].classList.add('reveal-left');
+    if (cols[1]) cols[1].classList.add('reveal-right');
+  });
+  document.querySelectorAll('.contact-grid').forEach(grid => {
+    const cols = grid.children;
+    if (cols[0]) cols[0].classList.add('reveal-left');
+    if (cols[1]) cols[1].classList.add('reveal-right');
+  });
+
+  // Observe and reveal
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => {
+    revealObserver.observe(el);
+  });
 
 });
