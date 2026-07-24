@@ -203,6 +203,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Bind nav-cta and hero Get a Quote buttons to open popup
+  const quoteTriggers = document.querySelectorAll('a[href*="quote=true"]');
+  quoteTriggers.forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const overlay = document.getElementById('quotePopupOverlay');
+      if (overlay) {
+        overlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
   const closePopupBtn = document.getElementById('closeQuotePopup');
   const popupOverlay = document.getElementById('quotePopupOverlay');
   const quickQuoteForm = document.getElementById('quickQuoteForm');
