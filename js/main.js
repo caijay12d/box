@@ -104,22 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (sel) sel.value = typeParam;
     }
 
-    // Mock data for testing
-    const mockData = {
-      name: 'Sarah Johnson',
-      company: 'BrightLife Supplements LLC',
-      email: 'sarah@brightlife.com',
-      'product-type': 'pharma',
-      quantity: '20,000 pcs',
-      message: 'We need custom printed SBS cartons for our new vitamin D3 supplement line. Size: 60x60x110mm, 350gsm SBS, CMYK + matte lamination. Please send a sample if possible.',
-    };
-    Object.entries(mockData).forEach(([key, value]) => {
-      const el = contactForm.querySelector(`[name="${key}"]`);
-      if (el && el.type !== 'checkbox' && el.type !== 'file') {
-        if (!el.value) el.value = value;
-      }
-    });
-
     // Intercept form submission
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -286,20 +270,6 @@ document.addEventListener('DOMContentLoaded', () => {
   requestAnimationFrame(() => {
     document.body.classList.add('loaded');
   });
-
-  /* ---------- Reading Progress Bar ---------- */
-  const progressBar = document.createElement('div');
-  progressBar.className = 'reading-progress';
-  document.body.appendChild(progressBar);
-
-  const updateProgress = () => {
-    const st = document.documentElement.scrollTop || document.body.scrollTop;
-    const sh = (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-    const pct = sh > 0 ? (st / sh) * 100 : 0;
-    progressBar.style.width = pct + '%';
-  };
-  window.addEventListener('scroll', updateProgress, { passive: true });
-  updateProgress();
 
   /* ---------- Back to Top Button ---------- */
   const backToTop = document.createElement('button');
