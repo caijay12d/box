@@ -36,21 +36,23 @@
         <a href="about.html">About</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
-        <a href="contact.html?quote=true" class="btn btn-primary btn-sm nav-cta">Request a Quote</a>
+        <a href="contact.html?quote=true" class="btn btn-primary btn-sm nav-cta" onclick="openPopup(); return false;">Request a Quote</a>
       </div>
     </nav>
   </header>
 
   <!-- Brand Hero -->
   <section class="brand-hero">
-    <div class="brand-hero-bg" style="background-image:url('images/123.jpg')"></div>
+    <video class="brand-hero-bg" autoplay muted loop playsinline poster="images/123.jpg">
+      <source src="videos/hero-boxes.mp4" type="video/mp4">
+    </video>
     <div class="brand-hero-overlay"></div>
     <div class="brand-hero-content container">
       <span class="brand-hero-eyebrow"><i class="fa-solid fa-leaf"></i> FSC-Certified · FDA/EU Compliant · Direct Export</span>
       <h1 class="brand-hero-title">Premium Paper Boxes.<br><span>Built for Global Brands.</span></h1>
       <p class="brand-hero-sub">Custom SBS paperboard packaging for food, pharma, health &amp; beauty, and gifts. Factory-direct pricing, fast samples in 7 days, 3-layer QC, and door-to-door logistics to USA &amp; Europe.</p>
       <div class="brand-hero-cta">
-        <a href="contact.html?quote=true" class="btn btn-primary btn-lg">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="contact.html?quote=true" class="btn btn-primary btn-lg" onclick="openPopup(); return false;">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
         <a href="contact.html?sample=true" class="btn btn-outline btn-lg">Request Free Sample</a>
       </div>
       <div class="brand-hero-trust">

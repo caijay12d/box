@@ -189,30 +189,22 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.insertAdjacentHTML('beforeend', popupHTML);
   }
 
+  // Global openPopup function (callable via onclick="openPopup()")
+  window.openPopup = function() {
+    const overlay = document.getElementById('quotePopupOverlay');
+    if (overlay) {
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+  };
+
   // Convert all float-btn-sample links to popup triggers
   const sampleBtns = document.querySelectorAll('.float-btn-sample');
   sampleBtns.forEach(btn => {
     // Replace <a> with <button> behavior
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      const overlay = document.getElementById('quotePopupOverlay');
-      if (overlay) {
-        overlay.classList.add('open');
-        document.body.style.overflow = 'hidden';
-      }
-    });
-  });
-
-  // Bind nav-cta and hero Get a Quote buttons to open popup
-  const quoteTriggers = document.querySelectorAll('a[href*="quote=true"]');
-  quoteTriggers.forEach(trigger => {
-    trigger.addEventListener('click', (e) => {
-      e.preventDefault();
-      const overlay = document.getElementById('quotePopupOverlay');
-      if (overlay) {
-        overlay.classList.add('open');
-        document.body.style.overflow = 'hidden';
-      }
+      openPopup();
     });
   });
 
