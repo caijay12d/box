@@ -24,6 +24,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ---------- FAQ Accordion ---------- */
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const heading = item.querySelector('h4');
+    if (heading) {
+      heading.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        faqItems.forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    }
+  });
+
   /* ---------- Dropdown Menu ---------- */
   const dropdowns = document.querySelectorAll('.nav-dropdown');
   dropdowns.forEach(dropdown => {
