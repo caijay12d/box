@@ -326,24 +326,26 @@ ul,ol { list-style:none; }
   transition:border-color var(--transition);
 }
 .faq-item:hover { border-color:var(--accent-light); }
-.faq-item h4 {
+.faq-trigger {
+  width:100%; border:none; background:transparent; font-family:inherit;
   font-size:.95rem; font-weight:600; color:var(--primary);
   padding:1.1rem 1.5rem; cursor:pointer; display:flex; justify-content:space-between;
   align-items:center; margin:0; user-select:none; transition:color var(--transition);
-  min-height:52px;
+  min-height:52px; text-align:left;
 }
-.faq-item h4:hover { color:var(--accent); }
-.faq-item h4:focus-visible { outline:2px solid var(--accent); outline-offset:-2px; }
-.faq-item h4::after {
+.faq-trigger:hover { color:var(--accent); }
+.faq-trigger:focus-visible { outline:2px solid var(--accent); outline-offset:-2px; }
+.faq-trigger::after {
   content:'\f078'; font-family:'Font Awesome 6 Free'; font-weight:900;
   font-size:.75rem; color:var(--text-muted); transition:transform var(--transition);
 }
-.faq-item.open h4::after { transform:rotate(180deg); }
-.faq-item p {
+.faq-item.open .faq-trigger::after { transform:rotate(180deg); }
+.faq-panel { display:none; }
+.faq-item.open .faq-panel { display:block; }
+.faq-panel p {
   font-size:.9rem; color:var(--text-light); line-height:1.7;
-  padding:0 1.5rem 1.1rem; display:none;
+  padding:0 1.5rem 1.1rem;
 }
-.faq-item.open p { display:block; }
 
 /* ---------- Timeline ---------- */
 .timeline { display:flex; flex-wrap:wrap; gap:0; justify-content:center; align-items:flex-start; }
@@ -421,9 +423,17 @@ ul,ol { list-style:none; }
 .contact-form input:hover, .contact-form select:hover, .contact-form textarea:hover { border-color:var(--accent-light); }
 .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { outline:none; border-color:var(--accent); box-shadow:0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent); }
 .contact-form textarea { resize:vertical; min-height:120px; }
-.contact-form .checkbox-group { display:flex; align-items:center; gap:8px; margin-bottom:1.2rem; }
-.contact-form .checkbox-group input[type="checkbox"] { width:20px; height:20px; margin:0; flex-shrink:0; }
-.contact-form .checkbox-group label { margin-bottom:0; line-height:1.5; }
+.contact-form .checkbox-group {
+  display:flex; align-items:center; gap:12px; margin-bottom:1.2rem;
+  min-height:44px; padding:6px 0;
+}
+.contact-form .checkbox-group input[type="checkbox"] {
+  width:22px; height:22px; margin:0; flex-shrink:0; cursor:pointer;
+}
+.contact-form .checkbox-group label {
+  margin-bottom:0; line-height:1.5; cursor:pointer;
+  flex:1; min-height:44px; display:flex; align-items:center;
+}
 .contact-form .file-upload { margin-bottom:1.2rem; }
 .contact-form .file-upload small { display:block; color:var(--text-light); margin-top:.2rem; }
 .form-promise-review {
@@ -779,8 +789,8 @@ ul,ol { list-style:none; }
   .btn { padding:14px 24px; font-size:.95rem; }
   .btn-sm { padding:14px 20px; }
   .product-card .btn-quote { padding:14px 20px; }
-  .faq-item h4 { padding:1rem 1.25rem; font-size:.9rem; }
-  .faq-item p { padding:0 1.25rem 1rem; font-size:.88rem; }
+  .faq-trigger { padding:1rem 1.25rem; font-size:.9rem; }
+  .faq-panel p { padding:0 1.25rem 1rem; font-size:.88rem; }
   /* Section padding mobile fix */
   .sbs-section, .process-teaser-section { padding:56px 0; }
   .faq-section { padding:48px 0; }

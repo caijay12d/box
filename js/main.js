@@ -36,32 +36,24 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- FAQ Accordion ---------- */
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
-    const heading = item.querySelector('h4');
-    if (heading) {
-      heading.setAttribute('role', 'button');
-      heading.setAttribute('tabindex', '0');
-      heading.setAttribute('aria-expanded', item.classList.contains('open') ? 'true' : 'false');
+    const trigger = item.querySelector('.faq-trigger');
+    if (trigger) {
+      trigger.setAttribute('aria-expanded', item.classList.contains('open') ? 'true' : 'false');
 
       const toggleFaqItem = () => {
         const isOpen = item.classList.contains('open');
         faqItems.forEach(i => {
           i.classList.remove('open');
-          const otherHeading = i.querySelector('h4');
-          if (otherHeading) otherHeading.setAttribute('aria-expanded', 'false');
+          const otherTrigger = i.querySelector('.faq-trigger');
+          if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
         });
         if (!isOpen) {
           item.classList.add('open');
-          heading.setAttribute('aria-expanded', 'true');
+          trigger.setAttribute('aria-expanded', 'true');
         }
       };
 
-      heading.addEventListener('click', toggleFaqItem);
-      heading.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          toggleFaqItem();
-        }
-      });
+      trigger.addEventListener('click', toggleFaqItem);
     }
   });
 
