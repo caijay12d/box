@@ -637,6 +637,66 @@ ul,ol { list-style:none; }
 .testimonial-date { font-size:.75rem; color:var(--text-light); }
 .testimonial-date i { margin-right:4px; font-size:.75rem; }
 
+/* ---------- Featured Case Study ---------- */
+.case-feature-section { padding-top:72px; }
+.case-feature-header { margin-bottom:40px; }
+.case-feature {
+  display:grid; grid-template-columns:1fr 1.05fr; gap:56px; align-items:center;
+}
+.case-feature-visual {
+  position:relative; border-radius:var(--radius-lg); overflow:hidden;
+  border:1px solid var(--border); background:var(--bg-alt);
+}
+.case-feature-visual img {
+  width:100%; height:100%; min-height:420px; object-fit:cover; display:block;
+}
+.case-feature-badge {
+  position:absolute; bottom:24px; left:24px;
+  background:rgba(255,255,255,.96); color:var(--primary); padding:16px 20px; border-radius:8px;
+  display:flex; align-items:center; gap:12px; box-shadow:0 4px 16px rgba(0,0,0,.12);
+}
+.case-feature-badge i { font-size:1.35rem; color:var(--cta); }
+.case-feature-badge span { font-size:.85rem; font-weight:700; line-height:1.4; }
+.case-feature-lead {
+  font-size:1rem; color:var(--text-light); line-height:1.75; margin-bottom:24px;
+}
+.case-feature-metrics {
+  display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:14px; margin-bottom:24px;
+}
+.case-metric {
+  background:var(--bg-alt); border:1px solid var(--border); border-radius:var(--radius);
+  padding:16px 18px;
+}
+.case-metric-label {
+  display:block; font-size:.72rem; font-weight:700; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--text-muted); margin-bottom:6px;
+}
+.case-metric strong {
+  display:block; font-size:1rem; color:var(--primary); margin-bottom:4px;
+}
+.case-metric-note { font-size:.82rem; color:var(--text-light); line-height:1.5; }
+.case-feature-outcomes {
+  list-style:none; margin:0 0 24px; padding:0;
+}
+.case-feature-outcomes li {
+  display:flex; align-items:flex-start; gap:10px; padding:8px 0;
+  font-size:.92rem; color:var(--text); line-height:1.6;
+}
+.case-feature-outcomes i {
+  color:var(--cta); font-size:.85rem; margin-top:4px; flex-shrink:0;
+}
+.case-feature-quote {
+  margin:0 0 24px; padding:18px 20px; background:var(--bg-soft);
+  border-left:4px solid var(--cta); border-radius:0 var(--radius) var(--radius) 0;
+}
+.case-feature-quote p {
+  font-size:.92rem; color:var(--text); line-height:1.7; font-style:italic; margin-bottom:8px;
+}
+.case-feature-quote cite {
+  font-size:.82rem; color:var(--text-light); font-style:normal; font-weight:600;
+}
+.case-feature-actions { display:flex; flex-wrap:wrap; gap:12px; }
+
 /* ---------- Quick Quote Popup ---------- */
 .quote-popup-overlay {
   position:fixed; inset:0; background:rgba(26,38,34,.55); backdrop-filter:blur(4px);
@@ -1024,7 +1084,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .cert-grid { grid-template-columns:repeat(3,1fr); }
   .sbs-grid { grid-template-columns:1fr; gap:40px; }
   .sbs-visual img { height:340px; }
+  .case-feature { grid-template-columns:1fr; gap:32px; }
+  .case-feature-visual img { min-height:280px; }
   .process-teaser-grid { grid-template-columns:repeat(2, 1fr); }
+  .case-feature-metrics { grid-template-columns:1fr; }
+  .case-feature-actions { flex-direction:column; }
+  .case-feature-actions .btn { width:100%; text-align:center; }
   .brand-hero { min-height:auto; padding:64px 0; }
   .brand-hero-trust { flex-wrap:wrap; gap:20px; }
 }

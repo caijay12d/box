@@ -625,7 +625,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '.section-title', '.section-subtitle',
     '.product-card', '.card', '.blog-card', '.stat-card', '.sustain-card', '.testimonial-card',
     '.faq-item', '.timeline-step', '.advantage-item', '.trust-badge', '.subcat-tag',
-    '.about-content', '.contact-info-item', '.contact-form'
+    '.about-content', '.contact-info-item', '.contact-form', '.case-feature-visual', '.case-feature-content'
   ];
   document.querySelectorAll(revealSelectors.join(',')).forEach(el => {
     if (!el.classList.contains('reveal')) el.classList.add('reveal');
