@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="icon" type="image/png" href="../images/logo/favicon-with-bg.png">
-  <link rel="stylesheet" href="../css/style.css?v=4">
+  <link rel="stylesheet" href="../css/style.css?v=7">
 </head>
 <body id="page-blog-article">
 
@@ -31,8 +31,9 @@
         </div>
         <a href="../custom-packaging.html">Custom Packaging</a>
         <a href="../about.html">About</a>
-        <a href="../blog.html">Blog</a>
+        <a href="../blog.html" class="active">Blog</a>
         <a href="../contact.html">Contact</a>
+        <a href="../contact.html?quote=true" class="btn btn-primary btn-sm nav-cta" onclick="openPopup(); return false;">Get Quote in 24h</a>
       </div>
     </nav>
   </header>
@@ -99,9 +100,11 @@
           <p style="font-size:.92rem; color:var(--text-light);">SBS is the go-to choice for pharma, beauty, and premium food packaging where print quality and compliance matter. Kraft is ideal for eco-brands and cost-sensitive applications. Both materials have their place — the right choice depends on your product, market, and brand positioning.</p>
         </div>
 
-        <p style="margin-top:2rem;">Not sure which material is right for your project? <a href="../contact.html">Contact us</a> — we'll help you compare options and send samples of both.</p>
-
-        <p style="margin-top:1rem;"><a href="../blog.html">&larr; Back to Blog</a></p>
+        <div class="article-actions">
+          <a href="../contact.html?sample=true" class="btn btn-primary">Request Material Samples</a>
+          <a href="../contact.html?quote=true" class="btn btn-outline" data-popup-scenario="expert" data-popup-source="material-comparison-article">Compare Materials with an Expert</a>
+          <a href="../blog.html" class="btn btn-outline">&larr; Back to Blog</a>
+        </div>
       </div>
     </div>
   </section>
@@ -122,17 +125,17 @@
         </div>
         <div class="footer-col">
           <h4>Products</h4>
-          <p><a href="../../products/food.html">Food &amp; Confectionery</a></p>
-          <p><a href="../../products/health-beauty.html">Health &amp; Beauty</a></p>
-          <p><a href="../../products/pharma.html">Pharma &amp; Supplements</a></p>
-          <p><a href="../../products/gift.html">Gift Box</a></p>
+          <p><a href="../products/food.html">Food &amp; Confectionery</a></p>
+          <p><a href="../products/health-beauty.html">Health &amp; Beauty</a></p>
+          <p><a href="../products/pharma.html">Pharma &amp; Supplements</a></p>
+          <p><a href="../products/gift.html">Gift Box</a></p>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
-          <p><a href="../../custom-packaging.html">Custom Packaging</a></p>
-          <p><a href="../../about.html">About Us</a></p>
-          <p><a href="../../blog.html">Blog</a></p>
-          <p><a href="../../contact.html">Contact</a></p>
+          <p><a href="../custom-packaging.html">Custom Packaging</a></p>
+          <p><a href="../about.html">About Us</a></p>
+          <p><a href="../blog.html">Blog</a></p>
+          <p><a href="../contact.html">Contact</a></p>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
@@ -156,6 +159,6 @@
     <a href="mailto:sales@boxifypack.com" class="float-btn float-btn-contact" title="Email Us"><i class="fa-solid fa-envelope"></i><span class="float-btn-label">Email Us</span></a>
   </div>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=5"></script>
 </body>
 </html>

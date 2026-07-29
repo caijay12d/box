@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="icon" type="image/png" href="images/logo/favicon-with-bg.png">
-  <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="stylesheet" href="css/style.css?v=7">
 </head>
 <body id="page-blog">
 
@@ -38,7 +38,7 @@
         <a href="about.html">About</a>
         <a href="blog.html" class="active">Blog</a>
         <a href="contact.html">Contact</a>
-        <a href="contact.html?quote=true" class="btn btn-primary btn-sm nav-cta" onclick="openPopup(); return false;">Get Quote in 24h</a>
+        <a href="contact.html?quote=true" class="btn btn-primary btn-sm nav-cta" data-popup-scenario="quote" data-popup-source="nav-cta">Get Quote in 24h</a>
       </div>
     </nav>
   </header>
@@ -54,7 +54,7 @@
     <div class="container">
       <div class="blog-grid">
         <div class="blog-card">
-          <img src="images/blog/child-resistant-packaging.jpg" alt="Child-Resistant Packaging">
+          <img src="images/blog/child-resistant-packaging.jpg" alt="Child-Resistant Packaging" loading="lazy">
           <div class="blog-body">
             <p class="blog-date"><i class="fa-regular fa-calendar"></i> May 15, 2026</p>
             <h3>How to Choose Child-Resistant Packaging for Supplements</h3>
@@ -63,7 +63,7 @@
           </div>
         </div>
         <div class="blog-card">
-          <img src="images/blog/sbs-vs-kraft.jpg" alt="SBS vs Kraft Paperboard">
+          <img src="images/blog/sbs-vs-kraft.jpg" alt="SBS vs Kraft Paperboard" loading="lazy">
           <div class="blog-body">
             <p class="blog-date"><i class="fa-regular fa-calendar"></i> April 28, 2026</p>
             <h3>SBS vs Kraft Paperboard: Which Is Right for Your Box?</h3>
@@ -72,7 +72,7 @@
           </div>
         </div>
         <div class="blog-card">
-          <img src="images/blog/moq-pricing-guide.jpg" alt="MOQ and pricing guide" loading="lazy">
+          <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Stacked%20custom%20paperboard%20packaging%20boxes%20in%20a%20clean%20modern%20warehouse%2C%20business-to-business%20packaging%20concept%2C%20soft%20natural%20lighting%2C%20industrial%20photography%20style%2C%20neutral%20tones&image_size=landscape_4_3" alt="MOQ and pricing guide" loading="lazy">
           <div class="blog-body">
             <p class="blog-date"><i class="fa-solid fa-tag"></i> Cost &amp; MOQ</p>
             <h3>Understanding MOQ, Pricing, and Lead Times for Custom Boxes</h3>
@@ -81,7 +81,7 @@
           </div>
         </div>
         <div class="blog-card">
-          <img src="images/blog/fsc-certification-guide.jpg" alt="FSC certification guide" loading="lazy">
+          <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=FSC%20certified%20paperboard%20packaging%20boxes%20with%20green%20forest%20tree%20logo%2C%20sustainable%20eco-friendly%20kraft%20paper%20packaging%2C%20clean%20studio%20product%20photography%2C%20soft%20natural%20light&image_size=landscape_4_3" alt="FSC certification guide" loading="lazy">
           <div class="blog-body">
             <p class="blog-date"><i class="fa-solid fa-tag"></i> Certification</p>
             <h3>Why FSC Certification Matters for Your Packaging</h3>
@@ -97,7 +97,7 @@
     <div class="container">
       <h2>Have a Packaging Question?</h2>
       <p>Our packaging experts are ready to help — get a detailed answer within 24 hours.</p>
-      <a href="contact.html?quote=true" class="btn btn-white" onclick="openPopup(); return false;">Ask an Expert &rarr;</a>
+      <a href="contact.html?quote=true" class="btn btn-white" data-popup-scenario="expert" data-popup-source="blog-cta">Talk to a Packaging Expert &rarr;</a>
     </div>
   </section>
 
@@ -151,6 +151,6 @@
     <a href="mailto:sales@boxifypack.com" class="float-btn float-btn-contact" title="Email Us"><i class="fa-solid fa-envelope"></i><span class="float-btn-label">Email Us</span></a>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=5"></script>
 </body>
 </html>

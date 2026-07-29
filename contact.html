@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="icon" type="image/png" href="images/logo/favicon-with-bg.png">
-  <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="stylesheet" href="css/style.css?v=7">
 </head>
 <body id="page-contact">
 
@@ -33,7 +33,7 @@
         <a href="about.html">About</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html" class="active">Contact</a>
-        <a href="contact.html?quote=true" class="btn btn-primary btn-sm nav-cta" onclick="openPopup(); return false;">Request a Quote</a>
+        <a href="#contact-form" class="btn btn-primary btn-sm nav-cta">Start Your Inquiry</a>
       </div>
     </nav>
   </header>
@@ -57,7 +57,7 @@
             <li>Dieline and structural drawing provided within 1–2 business days</li>
           </ol>
         </div>
-        <form class="contact-form" action="#" method="POST">
+        <form class="contact-form" id="contact-form" action="#" method="POST">
           <label for="name">Your Name *</label>
           <input type="text" id="name" name="name" required placeholder="John Smith">
 
@@ -72,7 +72,7 @@
             <option value="">-- Select --</option>
             <option value="food">Food &amp; Confectionery Box</option>
             <option value="health-beauty">Health &amp; Beauty Box</option>
-            <option value="pharma">Pharma &amp; Supplement Box</option>
+            <option value="pharma">Pharma &amp; Supplements Box</option>
             <option value="gift">Gift Box</option>
           </select>
 
@@ -198,6 +198,6 @@
     <a href="mailto:sales@boxifypack.com" class="float-btn float-btn-contact" title="Email Us"><i class="fa-solid fa-envelope"></i><span class="float-btn-label">Email Us</span></a>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=5"></script>
 </body>
 </html>

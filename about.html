@@ -10,13 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="icon" type="image/png" href="images/logo/favicon-with-bg.png">
-  <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="stylesheet" href="css/style.css?v=7">
 </head>
 <body id="page-about">
 
   <!-- Sample Banner -->
   <div class="sample-banner">
-    <i class="fa-solid fa-box-open"></i> Want to see our quality first? <a href="contact.html?sample=true">Request Free Sample &rarr;</a>
+    <i class="fa-solid fa-box-open"></i> Want to see our quality first? <a href="contact.html?sample=true">Request a Free Sample Box &rarr;</a>
   </div>
 
   <header class="site-header">
@@ -38,7 +38,7 @@
         <a href="about.html" class="active">About</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
-        <a href="contact.html?quote=true" class="btn btn-primary btn-sm nav-cta" onclick="openPopup(); return false;">Get Quote in 24h</a>
+        <a href="contact.html?quote=true" class="btn btn-primary btn-sm nav-cta" data-popup-scenario="quote" data-popup-source="nav-cta">Get Quote in 24h</a>
       </div>
     </nav>
   </header>
@@ -80,7 +80,7 @@
   <section class="section">
     <div class="container">
       <div class="about-content">
-        <img src="images/about/office-samples.jpg" alt="Modern office with packaging samples">
+        <img src="images/about/office-samples.jpg" alt="Modern office with packaging samples" loading="lazy">
         <div class="about-text">
           <h2>Your Packaging Sourcing Partner</h2>
           <p>BoxifyPack is a trade-focused company specializing in custom SBS paperboard packaging for the US and European markets. We bridge the gap between certified Chinese factories and international brands that demand consistent quality, regulatory compliance, and competitive pricing.</p>
@@ -128,9 +128,9 @@
     <div class="container">
       <h2>Ready to Source with Confidence?</h2>
       <p>Get a detailed quote within 24 hours — or request a free sample to experience our quality firsthand.</p>
-      <a href="contact.html?sample=true" class="btn btn-white btn-lg">Request Free Sample &rarr;</a>
+      <a href="contact.html?sample=true" class="btn btn-white btn-lg">Request a Free Sample Box &rarr;</a>
       &nbsp;&nbsp;
-      <a href="contact.html?quote=true" class="btn btn-outline btn-lg" onclick="openPopup(); return false;">Talk to a Packaging Expert</a>
+      <a href="contact.html?quote=true" class="btn btn-outline btn-lg" data-popup-scenario="expert" data-popup-source="about-cta">Talk to a Packaging Expert</a>
     </div>
   </section>
 
@@ -180,10 +180,10 @@
   </footer>
 
   <div class="float-buttons">
-    <a href="contact.html?sample=true" class="float-btn float-btn-sample" title="Request Free Sample"><i class="fa-solid fa-box-open"></i><span class="float-btn-label">Free Sample</span></a>
+    <a href="contact.html?sample=true" class="float-btn float-btn-sample" title="Request a Free Sample Box"><i class="fa-solid fa-box-open"></i><span class="float-btn-label">Free Sample</span></a>
     <a href="mailto:sales@boxifypack.com" class="float-btn float-btn-contact" title="Email Us"><i class="fa-solid fa-envelope"></i><span class="float-btn-label">Email Us</span></a>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=5"></script>
 </body>
 </html>

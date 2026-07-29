@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="icon" type="image/png" href="../images/logo/favicon-with-bg.png">
-  <link rel="stylesheet" href="../css/style.css?v=4">
+  <link rel="stylesheet" href="../css/style.css?v=7">
 </head>
 <body id="page-blog-article">
 
@@ -31,8 +31,9 @@
         </div>
         <a href="../custom-packaging.html">Custom Packaging</a>
         <a href="../about.html">About</a>
-        <a href="../blog.html">Blog</a>
+        <a href="../blog.html" class="active">Blog</a>
         <a href="../contact.html">Contact</a>
+        <a href="../contact.html?quote=true" class="btn btn-primary btn-sm nav-cta" data-popup-scenario="quote" data-popup-source="nav-cta">Get Quote in 24h</a>
       </div>
     </nav>
   </header>
@@ -82,14 +83,15 @@
           <li>Hidden locking tabs integrated into the carton structure</li>
           <li>Full compliance documentation and lab test reports</li>
         </ul>
-        <p>Need CR packaging for your supplement line? <a href="../contact.html?type=pharma">Contact us for a free sample and quote</a>.</p>
-
         <div style="margin-top:2rem; padding:20px; background:var(--bg-alt); border-radius:var(--radius);">
           <p style="font-weight:700; color:var(--primary); margin-bottom:.5rem;"><i class="fa-solid fa-lightbulb"></i> Key Takeaway</p>
           <p style="font-size:.92rem; color:var(--text-light);">CR compliance is non-negotiable for many supplement products in the US. Work with a packaging supplier who understands the regulations and can provide certified CR structures with test reports.</p>
         </div>
-
-        <p style="margin-top:2rem;"><a href="../blog.html">&larr; Back to Blog</a></p>
+        <div class="article-actions">
+          <a href="../contact.html?sample=true&type=pharma" class="btn btn-primary">Request a CR Sample</a>
+          <a href="../contact.html?quote=true&type=pharma" class="btn btn-outline" data-popup-scenario="expert" data-popup-type="pharma" data-popup-source="cr-article">Talk to a Packaging Expert</a>
+          <a href="../blog.html" class="btn btn-outline">&larr; Back to Blog</a>
+        </div>
       </div>
     </div>
   </section>
@@ -110,17 +112,17 @@
         </div>
         <div class="footer-col">
           <h4>Products</h4>
-          <p><a href="../../products/food.html">Food &amp; Confectionery</a></p>
-          <p><a href="../../products/health-beauty.html">Health &amp; Beauty</a></p>
-          <p><a href="../../products/pharma.html">Pharma &amp; Supplements</a></p>
-          <p><a href="../../products/gift.html">Gift Box</a></p>
+          <p><a href="../products/food.html">Food &amp; Confectionery</a></p>
+          <p><a href="../products/health-beauty.html">Health &amp; Beauty</a></p>
+          <p><a href="../products/pharma.html">Pharma &amp; Supplements</a></p>
+          <p><a href="../products/gift.html">Gift Box</a></p>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
-          <p><a href="../../custom-packaging.html">Custom Packaging</a></p>
-          <p><a href="../../about.html">About Us</a></p>
-          <p><a href="../../blog.html">Blog</a></p>
-          <p><a href="../../contact.html">Contact</a></p>
+          <p><a href="../custom-packaging.html">Custom Packaging</a></p>
+          <p><a href="../about.html">About Us</a></p>
+          <p><a href="../blog.html">Blog</a></p>
+          <p><a href="../contact.html">Contact</a></p>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
@@ -144,6 +146,6 @@
     <a href="mailto:sales@boxifypack.com" class="float-btn float-btn-contact" title="Email Us"><i class="fa-solid fa-envelope"></i><span class="float-btn-label">Email Us</span></a>
   </div>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=5"></script>
 </body>
 </html>

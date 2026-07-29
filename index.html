@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="icon" type="image/png" href="images/logo/favicon-with-bg.png">
-  <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="stylesheet" href="css/style.css?v=7">
 </head>
 <body id="page-index">
 
@@ -36,15 +36,15 @@
         <a href="about.html">About</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
-        <a href="contact.html?quote=true" class="btn btn-primary btn-sm nav-cta" onclick="openPopup(); return false;">Get Quote in 24h</a>
+        <a href="contact.html?quote=true" class="btn btn-primary btn-sm nav-cta" data-popup-scenario="quote" data-popup-source="nav-cta">Get Quote in 24h</a>
       </div>
     </nav>
   </header>
 
   <!-- 1. Hero -->
   <section class="brand-hero">
-    <video class="brand-hero-bg" autoplay muted loop playsinline poster="images/123.jpg">
-      <source src="videos/hero-boxes.mp4" type="video/mp4">
+    <video class="brand-hero-bg" autoplay muted loop playsinline preload="none" poster="images/123.jpg">
+      <source data-src="videos/hero-boxes.mp4" type="video/mp4">
     </video>
     <div class="brand-hero-overlay"></div>
     <div class="brand-hero-content container">
@@ -52,8 +52,8 @@
       <h1 class="brand-hero-title">Premium Paper Boxes.<br><span>Built for Global Brands.</span></h1>
       <p class="brand-hero-sub">Custom SBS paperboard packaging for food, pharma, beauty, and gifts. Factory-direct pricing with door-to-door logistics to USA &amp; Europe.</p>
       <div class="brand-hero-cta">
-        <a href="contact.html?sample=true" class="btn btn-primary btn-lg">Request Free Sample</a>
-        <a href="contact.html?quote=true" class="btn btn-outline btn-lg" onclick="openPopup(); return false;">Send Your Dieline for Review</a>
+        <a href="contact.html?quote=true" class="btn btn-primary btn-lg" data-popup-scenario="quote" data-popup-source="hero-quote">Get Quote in 24h</a>
+        <a href="contact.html?intent=review" class="btn btn-outline btn-lg">Send Your Dieline for Review</a>
       </div>
       <div class="brand-hero-trust">
         <div class="hero-trust-item"><strong>14yrs</strong><span>Export Experience</span></div>
@@ -102,9 +102,7 @@
           <p>Factory-to-door logistics, global shipping</p>
         </div>
       </div>
-      <div style="margin-top:40px;">
-        <a href="contact.html?quote=true" class="btn btn-primary" onclick="openPopup(); return false;">Talk to a Packaging Expert</a>
-      </div>
+      <p style="margin-top:32px; color:var(--text-light);">Need help choosing structure, certifications, or MOQ? <a href="custom-packaging.html">See how our custom packaging process works</a>.</p>
     </div>
   </section>
 
@@ -196,7 +194,7 @@
     <a href="products/health-beauty.html" class="hero-grid-card" style="background-image:url('images/hero/beauty-packaging.jpg')">
       <div class="hero-grid-overlay"></div>
       <div class="hero-grid-content">
-        <h2>Health and Beauty</h2>
+        <h2>Health &amp; Beauty</h2>
         <p>Soft-touch, eco-friendly SBS</p>
         <span class="btn btn-hero">Explore &rarr;</span>
       </div>
@@ -204,7 +202,7 @@
     <a href="products/pharma.html" class="hero-grid-card" style="background-image:url('images/hero/pharma-packaging.jpg')">
       <div class="hero-grid-overlay"></div>
       <div class="hero-grid-content">
-        <h2>Pharma and Supplements</h2>
+        <h2>Pharma &amp; Supplements</h2>
         <p>Child-resistant, moisture barrier</p>
         <span class="btn btn-hero">Explore &rarr;</span>
       </div>
@@ -332,9 +330,6 @@
           </div>
         </div>
       </div>
-      <div style="margin-top:40px;">
-        <a href="contact.html?quote=true" class="btn btn-primary" onclick="openPopup(); return false;">Start Your Project</a>
-      </div>
     </div>
   </section>
 
@@ -383,8 +378,11 @@
   <section class="cta-banner">
     <div class="container">
       <h2>Ready to Start Your Packaging Project?</h2>
-      <p>Get a detailed quote within 24 hours &mdash; or request a free sample box to feel the quality firsthand.</p>
-      <a href="contact.html?quote=true" class="btn btn-white" onclick="openPopup(); return false;">Send Your Inquiry &rarr;</a>
+      <p>Choose the next step that matches your project stage.</p>
+      <div class="brand-hero-cta" style="justify-content:center; margin-bottom:0;">
+        <a href="contact.html?sample=true" class="btn btn-white">Request a Free Sample Box</a>
+        <a href="contact.html?quote=true" class="btn btn-outline btn-lg" data-popup-scenario="expert" data-popup-source="final-cta">Talk to a Packaging Expert</a>
+      </div>
     </div>
   </section>
 
@@ -439,7 +437,7 @@
 
   <!-- Floating Buttons -->
   <div class="float-buttons">
-    <a href="contact.html?sample=true" class="float-btn float-btn-sample" title="Request Free Sample">
+    <a href="contact.html?sample=true" class="float-btn float-btn-sample" title="Request a Free Sample Box">
       <i class="fa-solid fa-box-open"></i>
       <span class="float-btn-label">Free Sample</span>
     </a>
@@ -449,6 +447,6 @@
     </a>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=5"></script>
 </body>
 </html>
