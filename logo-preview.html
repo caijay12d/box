@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Options — BoxifyPack</title>
+  <link rel="stylesheet" href="css/style.css?v=26">
+  <style>
+    .logo-lab {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 5% 80px;
+    }
+    .logo-lab h1 {
+      font-size: 1.75rem;
+      color: var(--text);
+      margin-bottom: 8px;
+      letter-spacing: -.03em;
+    }
+    .logo-lab-lead {
+      color: var(--text-light);
+      font-size: .95rem;
+      line-height: 1.7;
+      max-width: 640px;
+      margin-bottom: 36px;
+    }
+    .logo-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-bottom: 20px;
+      background: var(--bg);
+      box-shadow: var(--shadow-soft);
+    }
+    .logo-card-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      padding: 14px 20px;
+      background: var(--bg-alt);
+      border-bottom: 1px solid var(--border-light);
+    }
+    .logo-card-head strong { font-size: .92rem; color: var(--text); }
+    .logo-card-head span { font-size: .78rem; color: var(--text-muted); }
+    .logo-card-nav {
+      background: var(--nav-bg);
+      padding: 18px 24px;
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+    }
+    .logo-card-light {
+      background: var(--bg);
+      padding: 18px 24px;
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      border-top: 1px solid var(--border-light);
+    }
+    .logo-card-note {
+      padding: 10px 20px 14px;
+      font-size: .78rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* Shared lockup helpers */
+    .lockup {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+    }
+    .lockup img, .lockup svg { display: block; flex-shrink: 0; }
+
+    /* A — current */
+    .lockup-a img { height: 44px; width: auto; }
+
+    /* B — previous SVG attempt */
+    .lockup-b { gap: 10px; }
+    .lockup-b img { width: 30px; height: 30px; }
+    .lockup-b .word { font-size: 1.22rem; font-weight: 600; letter-spacing: -.03em; line-height: 1; }
+    .lockup-b .word em { font-style: normal; font-weight: 400; opacity: .88; }
+
+    /* C — all-white tight */
+    .lockup-c { gap: 8px; }
+    .lockup-c img { width: 26px; height: 26px; }
+    .lockup-c .word {
+      font-size: 1.18rem; font-weight: 600; letter-spacing: -.045em; line-height: 1;
+    }
+
+    /* D — accent Pack */
+    .lockup-d { gap: 9px; }
+    .lockup-d img { width: 28px; height: 28px; }
+    .lockup-d .word { font-size: 1.2rem; font-weight: 600; letter-spacing: -.035em; line-height: 1; }
+    .lockup-d .word em { font-style: normal; font-weight: 500; color: #c5e8de; }
+
+    /* E — wordmark only */
+    .lockup-e .word {
+      font-size: 1.28rem; font-weight: 700; letter-spacing: -.06em; line-height: 1;
+    }
+    .lockup-e .word em {
+      font-style: normal; font-weight: 500; letter-spacing: -.02em; opacity: .9;
+    }
+
+    /* F — monogram badge */
+    .lockup-f { gap: 10px; }
+    .lockup-f img { width: 32px; height: 32px; }
+    .lockup-f .word { font-size: 1.16rem; font-weight: 600; letter-spacing: -.04em; line-height: 1; }
+
+    /* G — carton + single word */
+    .lockup-g { gap: 8px; }
+    .lockup-g img { width: 27px; height: 27px; }
+    .lockup-g .word {
+      font-size: 1.14rem; font-weight: 600; letter-spacing: .01em; line-height: 1;
+      text-transform: none;
+    }
+    .lockup-g .word span { font-weight: 500; opacity: .92; }
+
+    /* Light surface variants */
+    .logo-card-light .lockup { color: var(--primary); }
+    .logo-card-light .lockup-d .word em { color: var(--accent); }
+    .logo-card-light .lockup img { filter: none; }
+    .logo-card-light .lockup-c img,
+    .logo-card-light .lockup-d img,
+    .logo-card-light .lockup-f img,
+    .logo-card-light .lockup-g img {
+      filter: brightness(0) saturate(100%) invert(19%) sepia(28%) saturate(749%) hue-rotate(118deg) brightness(95%) contrast(92%);
+    }
+
+    .logo-lab-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 28px;
+      font-size: .88rem;
+      font-weight: 500;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo-lab">
+    <a href="index.html" class="logo-lab-back">&larr; Back to site</a>
+    <h1>Logo options</h1>
+    <p class="logo-lab-lead">
+      Compare lockups on the same dark-green navigation background used across the site.
+      Option A is the current live logo. Options C–G address icon/text balance and contrast (all white or white + light accent — no dark green on green).
+    </p>
+
+    <!-- A Current -->
+    <div class="logo-card">
+      <div class="logo-card-head">
+        <strong>A — Current (live)</strong>
+        <span>logo (1).png</span>
+      </div>
+      <div class="logo-card-nav">
+        <a href="#" class="lockup lockup-a" onclick="return false">
+          <img src="images/logo/logo (1).png" alt="BoxifyPack">
+        </a>
+      </div>
+      <div class="logo-card-light">
+        <a href="#" class="lockup lockup-a" onclick="return false">
+          <img src="images/logo/logo (2).png" alt="BoxifyPack">
+        </a>
+      </div>
+      <p class="logo-card-note">Existing hexagon-b mark. Works, but feels template-like; icon weight heavier than the wordmark.</p>
+    </div>
+
+    <!-- B Previous attempt -->
+    <div class="logo-card">
+      <div class="logo-card-head">
+        <strong>B — Isometric + split weight</strong>
+        <span>Previous draft</span>
+      </div>
+      <div class="logo-card-nav">
+        <a href="#" class="lockup lockup-b" onclick="return false">
+          <img src="images/logo/icon-isometric-white.svg" alt="">
+          <span class="word">Boxify<em>Pack</em></span>
+        </a>
+      </div>
+      <p class="logo-card-note">Icon scale and type weight feel mismatched; SVG icon may not pick up white when used as &lt;img&gt; in some cases.</p>
+    </div>
+
+    <!-- C All white tight -->
+    <div class="logo-card">
+      <div class="logo-card-head">
+        <strong>C — Tight all-white lockup</strong>
+        <span>Recommended for nav</span>
+      </div>
+      <div class="logo-card-nav">
+        <a href="#" class="lockup lockup-c" onclick="return false">
+          <img src="images/logo/icon-isometric-white.svg" alt="">
+          <span class="word">BoxifyPack</span>
+        </a>
+      </div>
+      <div class="logo-card-light">
+        <a href="#" class="lockup lockup-c" onclick="return false">
+          <img src="images/logo/icon-isometric-white.svg" alt="">
+          <span class="word">BoxifyPack</span>
+        </a>
+      </div>
+      <p class="logo-card-note">Smaller icon aligned to cap height; single semibold wordmark. Clean B2B look, high contrast on dark nav.</p>
+    </div>
+
+    <!-- D Accent -->
+    <div class="logo-card">
+      <div class="logo-card-head">
+        <strong>D — White + mint accent</strong>
+        <span>Subtle brand color</span>
+      </div>
+      <div class="logo-card-nav">
+        <a href="#" class="lockup lockup-d" onclick="return false">
+          <img src="images/logo/icon-carton-white.svg" alt="">
+          <span class="word">Boxify<em>Pack</em></span>
+        </a>
+      </div>
+      <div class="logo-card-light">
+        <a href="#" class="lockup lockup-d" onclick="return false">
+          <img src="images/logo/icon-carton-white.svg" alt="">
+          <span class="word">Boxify<em>Pack</em></span>
+        </a>
+      </div>
+      <p class="logo-card-note">Tuck-end carton icon; &ldquo;Pack&rdquo; in light mint (#c5e8de) for contrast without going dark-green-on-green.</p>
+    </div>
+
+    <!-- E Wordmark -->
+    <div class="logo-card">
+      <div class="logo-card-head">
+        <strong>E — Wordmark only</strong>
+        <span>No icon</span>
+      </div>
+      <div class="logo-card-nav">
+        <a href="#" class="lockup lockup-e" onclick="return false">
+          <span class="word">Boxify<em>Pack</em></span>
+        </a>
+      </div>
+      <div class="logo-card-light">
+        <a href="#" class="lockup lockup-e" onclick="return false">
+          <span class="word">Boxify<em>Pack</em></span>
+        </a>
+      </div>
+      <p class="logo-card-note">Premium typography-led lockup — common for manufacturing / export brands. No icon mismatch issues.</p>
+    </div>
+
+    <!-- F Monogram -->
+    <div class="logo-card">
+      <div class="logo-card-head">
+        <strong>F — Monogram badge</strong>
+        <span>App-icon style</span>
+      </div>
+      <div class="logo-card-nav">
+        <a href="#" class="lockup lockup-f" onclick="return false">
+          <img src="images/logo/icon-monogram-white.svg" alt="">
+          <span class="word">BoxifyPack</span>
+        </a>
+      </div>
+      <div class="logo-card-light">
+        <a href="#" class="lockup lockup-f" onclick="return false">
+          <img src="images/logo/icon-monogram-white.svg" alt="">
+          <span class="word">BoxifyPack</span>
+        </a>
+      </div>
+      <p class="logo-card-note">Rounded-square BP mark; reads well as favicon and nav. More &ldquo;tech brand&rdquo; than packaging.</p>
+    </div>
+
+    <!-- G Mailer -->
+    <div class="logo-card">
+      <div class="logo-card-head">
+        <strong>G — Mailer / tuck-end icon</strong>
+        <span>Packaging-specific</span>
+      </div>
+      <div class="logo-card-nav">
+        <a href="#" class="lockup lockup-g" onclick="return false">
+          <img src="images/logo/icon-mailer-white.svg" alt="">
+          <span class="word">Boxify<span>Pack</span></span>
+        </a>
+      </div>
+      <div class="logo-card-light">
+        <a href="#" class="lockup lockup-g" onclick="return false">
+          <img src="images/logo/icon-mailer-white.svg" alt="">
+          <span class="word">Boxify<span>Pack</span></span>
+        </a>
+      </div>
+      <p class="logo-card-note">Classic folding-carton silhouette; icon proportions closer to text height. Strong fit for SBS carton positioning.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

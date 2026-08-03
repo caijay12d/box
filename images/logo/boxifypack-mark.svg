@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" role="img" aria-label="BoxifyPack">
+  <rect width="32" height="32" rx="8" fill="#1a4d42"/>
+  <g stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 5)">
+    <path d="M4 10V20L12 24V14L4 10Z"/>
+    <path d="M12 14L20 10V20L12 24"/>
+    <path d="M4 10L12 14L20 10"/>
+    <path d="M12 14V24"/>
+  </g>
+</svg>

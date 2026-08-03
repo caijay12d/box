@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 44" fill="none" role="img" aria-label="BoxifyPack">
+  <svg x="0" y="1" width="34" height="42" viewBox="0 0 565 717" overflow="visible">
+    <path d="M128.50,0.00 L140.00,4.50 L147.50,11.00 L153.50,20.00 L156.50,31.00 L156.50,459.00 L160.50,467.00 L168.00,473.50 L277.00,538.50 L282.00,540.50 L291.00,540.50 L296.00,538.50 L400.00,478.50 L407.50,471.00 L411.50,461.00 L412.50,319.00 L409.50,308.00 L399.00,296.50 L291.00,232.50 L280.00,232.50 L248.00,251.50 L237.00,251.50 L226.50,245.00 L222.50,237.00 L222.50,145.00 L227.50,133.00 L237.00,123.50 L308.00,82.50 L317.00,78.50 L330.00,78.50 L341.00,83.50 L548.00,207.50 L558.50,217.00 L564.00,230.50 Z" fill="#1a4d42"/>
+  </svg>
+  <text x="42" y="30" fill="#1a4d42" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="19" font-weight="600" letter-spacing="-0.03em">Boxify</text>
+  <text x="104" y="30" fill="#256b5f" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="19" font-weight="400" letter-spacing="-0.01em">Pack</text>
+</svg>

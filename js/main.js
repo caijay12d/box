@@ -140,6 +140,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (params.get('intent') === 'review') {
       const messageField = contactForm.querySelector('#message');
       const fileField = contactForm.querySelector('#design-file');
+      const stepsBox = contactForm.closest('.contact-form-card')?.querySelector('.contact-steps');
+      if (stepsBox) stepsBox.hidden = true;
       const promiseBox = document.createElement('div');
       promiseBox.className = 'form-promise form-promise-review';
       promiseBox.innerHTML = '<h3><i class="fa-solid fa-file-arrow-up"></i> Upload Your Artwork or Dieline</h3><p>Attach your AI, PDF, or ZIP file and tell us what you want reviewed. We will reply with structural or pricing feedback within 24 hours on business days.</p>';
@@ -595,6 +597,16 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('loaded');
   });
 
+  /* ---------- Sticky header scroll state ---------- */
+  const siteHeader = document.querySelector('.site-header');
+  if (siteHeader) {
+    const updateHeaderScroll = () => {
+      siteHeader.classList.toggle('is-scrolled', window.scrollY > 8);
+    };
+    window.addEventListener('scroll', updateHeaderScroll, { passive: true });
+    updateHeaderScroll();
+  }
+
   /* ---------- Back to Top Button ---------- */
   const backToTop = document.createElement('button');
   backToTop.className = 'back-to-top';
@@ -622,22 +634,16 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- Scroll Reveal Animations ---------- */
   // Auto-add reveal classes to common block elements
   const revealSelectors = [
-    '.section-title', '.section-subtitle',
-    '.product-card', '.card', '.blog-card', '.stat-card', '.sustain-card', '.testimonial-card',
-    '.faq-item', '.timeline-step', '.advantage-item', '.trust-badge', '.subcat-tag',
-    '.about-content', '.contact-info-item', '.contact-form', '.case-feature-visual', '.case-feature-content'
+    '.case-feature-visual', '.case-feature-content'
   ];
   document.querySelectorAll(revealSelectors.join(',')).forEach(el => {
     if (!el.classList.contains('reveal')) el.classList.add('reveal');
   });
 
-  // Stagger grid children
-  ['card-grid', 'blog-grid', 'stats-grid', 'sustainability-grid', 'testimonials-grid', 'advantages-grid'].forEach(cls => {
-    document.querySelectorAll('.' + cls).forEach(grid => {
-      Array.from(grid.children).forEach((child, i) => {
-        if (i < 6) child.setAttribute('data-delay', String(i + 1));
-      });
-    });
+  // Stagger homepage bento tiles
+  document.querySelectorAll('.industry-bento .industry-tile').forEach((tile, i) => {
+    tile.classList.add('reveal');
+    if (i < 6) tile.setAttribute('data-delay', String(i + 1));
   });
 
   // About/contact two-column reveals
@@ -646,10 +652,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (cols[0]) cols[0].classList.add('reveal-left');
     if (cols[1]) cols[1].classList.add('reveal-right');
   });
-  document.querySelectorAll('.contact-grid').forEach(grid => {
-    const cols = grid.children;
-    if (cols[0]) cols[0].classList.add('reveal-left');
-    if (cols[1]) cols[1].classList.add('reveal-right');
+  document.querySelectorAll('.contact-layout, .contact-grid').forEach(grid => {
+    const main = grid.querySelector('.contact-main') || grid.children[0];
+    const aside = grid.querySelector('.contact-aside') || grid.children[1];
+    if (main) main.classList.add('reveal-left');
+    if (aside) aside.classList.add('reveal-right');
   });
 
   // Observe and reveal

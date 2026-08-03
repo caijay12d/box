@@ -1,0 +1,17 @@
+{
+  "name": "boxifypack-website",
+  "version": "1.0.0",
+  "description": "BoxifyPack packaging website with automated lazy loading tests",
+  "scripts": {
+    "test": "jest",
+    "test:verbose": "jest --verbose",
+    "test:dom": "jest --testNamePattern='DOM'",
+    "test:desktop": "jest --testNamePattern='Desktop'",
+    "test:mobile": "jest --testNamePattern='Mobile'",
+    "test:ci": "jest --ci --maxWorkers=1 --reporters=default"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "puppeteer": "^24.43.1"
+  }
+}

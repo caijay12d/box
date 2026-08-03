@@ -3,29 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Packaging Insights &amp; Guides – BoxifyPack Blog</title>
+  <title>Packaging Insights &amp; Guides — BoxifyPack Blog</title>
   <meta name="description" content="Packaging insights, material guides, and regulatory tips for food, pharma, and beauty brands shipping to USA & Europe.">
   <meta name="keywords" content="packaging blog, SBS paperboard guide, child-resistant packaging, packaging regulations">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="icon" type="image/png" href="images/logo/favicon-with-bg.png">
-  <link rel="stylesheet" href="css/style.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="images/logo/favicon.svg">
+  <link rel="stylesheet" href="css/style.css?v=20">
 </head>
 <body id="page-blog">
 
   <header class="site-header">
     <nav class="navbar">
-      <a href="index.html" class="nav-logo"><img src="images/logo/logo (1).png" alt="BoxifyPack" class="nav-logo-img"></a>
+      <a href="index.html" class="nav-logo" aria-label="BoxifyPack">
+        <img src="images/logo/cp.svg" alt="" class="nav-logo-icon" width="32" height="40">
+        <span class="nav-logo-text">Boxify<em>Pack</em></span>
+      </a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <div class="nav-dropdown">
           <a href="#" class="nav-dropdown-toggle">Products</a>
           <div class="nav-dropdown-menu">
+            <a href="products/pharma.html">Pharma &amp; Supplements</a>
             <a href="products/food.html">Food &amp; Confectionery</a>
             <a href="products/health-beauty.html">Health &amp; Beauty</a>
-            <a href="products/pharma.html">Pharma &amp; Supplements</a>
             <a href="products/gift.html">Gift Box</a>
           </div>
         </div>
@@ -47,52 +48,61 @@
 
   <section class="section">
     <div class="container">
-      <div class="blog-grid">
-        <div class="blog-card">
+      <div class="blog-showcase">
+        <a href="blog/how-to-choose-child-resistant-packaging.html" class="blog-featured">
           <img src="images/blog/child-resistant-packaging.jpg" alt="Child-Resistant Packaging" loading="lazy">
-          <div class="blog-body">
-            <p class="blog-date"><i class="fa-regular fa-calendar"></i> May 15, 2026</p>
-            <h3>How to Choose Child-Resistant Packaging for Supplements</h3>
+          <div class="blog-featured-body">
+            <span class="blog-featured-tag">Featured Guide</span>
+            <h2>How to Choose Child-Resistant Packaging for Supplements</h2>
             <p>If you sell dietary supplements in the US, child-resistant (CR) packaging isn't optional — it's the law. Here's what you need to know about CR closures, testing standards, and how to stay compliant.</p>
-            <a href="blog/how-to-choose-child-resistant-packaging.html" class="btn btn-outline btn-sm">Read More</a>
+            <span class="blog-featured-link">Read the full guide <i class="fa-solid fa-arrow-right"></i></span>
           </div>
-        </div>
-        <div class="blog-card">
-          <img src="images/blog/sbs-vs-kraft.jpg" alt="SBS vs Kraft Paperboard" loading="lazy">
-          <div class="blog-body">
-            <p class="blog-date"><i class="fa-regular fa-calendar"></i> April 28, 2026</p>
-            <h3>SBS vs Kraft Paperboard: Which Is Right for Your Box?</h3>
-            <p>Choosing between solid bleached sulfate (SBS) and kraft paperboard affects print quality, rigidity, and cost. This guide compares both materials across key factors to help you decide.</p>
-            <a href="blog/sbs-vs-kraft-paperboard.html" class="btn btn-outline btn-sm">Read More</a>
-          </div>
-        </div>
-        <div class="blog-card">
-          <img src="images/blog/moq-pricing-lead-times.jpg" alt="Custom paperboard boxes in production for bulk order" loading="lazy">
-          <div class="blog-body">
-            <p class="blog-date"><i class="fa-solid fa-tag"></i> Cost &amp; MOQ</p>
-            <h3>Understanding MOQ, Pricing, and Lead Times for Custom Boxes</h3>
-            <p>What affects your box price? How does MOQ work? Get a clear breakdown of cost factors, quantity tiers, and production timelines.</p>
-            <a href="blog/understanding-moq-pricing-lead-times.html" class="btn btn-outline btn-sm">Read Guide &rarr;</a>
-          </div>
-        </div>
-        <div class="blog-card">
-          <img src="images/blog/fsc-certification.jpg" alt="Eco-friendly FSC-certified paperboard packaging boxes" loading="lazy">
-          <div class="blog-body">
-            <p class="blog-date"><i class="fa-solid fa-tag"></i> Certification</p>
-            <h3>Why FSC Certification Matters for Your Packaging</h3>
-            <p>How FSC certification affects your brand, retailer requirements, and consumer trust — and how to verify your supplier's credentials.</p>
-            <a href="blog/why-fsc-certification-matters.html" class="btn btn-outline btn-sm">Read Guide &rarr;</a>
-          </div>
+        </a>
+        <div class="blog-grid blog-grid-compact">
+          <a href="blog/sbs-vs-kraft-paperboard.html" class="blog-card">
+            <img src="images/blog/sbs-vs-kraft.jpg" alt="SBS vs Kraft Paperboard" loading="lazy">
+            <div class="blog-body">
+              <p class="blog-date"><i class="fa-regular fa-calendar"></i> April 28, 2026</p>
+              <h3>SBS vs Kraft Paperboard: Which Is Right for Your Box?</h3>
+              <p>Choosing between solid bleached sulfate (SBS) and kraft paperboard affects print quality, rigidity, and cost.</p>
+              <span class="btn btn-outline btn-sm">Read More</span>
+            </div>
+          </a>
+          <a href="blog/understanding-moq-pricing-lead-times.html" class="blog-card">
+            <img src="images/blog/moq-pricing-lead-times.jpg" alt="Custom paperboard boxes in production for bulk order" loading="lazy">
+            <div class="blog-body">
+              <p class="blog-date"><i class="fa-solid fa-tag"></i> Cost &amp; MOQ</p>
+              <h3>Understanding MOQ, Pricing, and Lead Times for Custom Boxes</h3>
+              <p>What affects your box price? How does MOQ work? Get a clear breakdown of cost factors and timelines.</p>
+              <span class="btn btn-outline btn-sm">Read Guide &rarr;</span>
+            </div>
+          </a>
+          <a href="blog/why-fsc-certification-matters.html" class="blog-card">
+            <img src="images/blog/fsc-certification.jpg" alt="Eco-friendly FSC-certified paperboard packaging boxes" loading="lazy">
+            <div class="blog-body">
+              <p class="blog-date"><i class="fa-solid fa-tag"></i> Certification</p>
+              <h3>Why FSC Certification Matters for Your Packaging</h3>
+              <p>How FSC certification affects your brand, retailer requirements, and consumer trust.</p>
+              <span class="btn btn-outline btn-sm">Read Guide &rarr;</span>
+            </div>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="cta-banner">
+  <section class="cta-compact">
     <div class="container">
-      <h2>Have a Packaging Question?</h2>
-      <p>Our packaging experts are ready to help — get a detailed answer within 24 hours.</p>
-      <a href="contact.html?quote=true" class="btn btn-white" data-popup-scenario="expert" data-popup-source="blog-cta">Talk to a Packaging Expert &rarr;</a>
+      <div class="cta-compact-inner">
+        <div class="cta-compact-copy">
+          <h2>Have a Packaging Question?</h2>
+          <p>Our experts are ready to help — get a detailed answer within 24 hours on business days.</p>
+        </div>
+        <div class="cta-compact-actions">
+          <a href="contact.html?quote=true" class="btn btn-primary" data-popup-scenario="expert" data-popup-source="blog-cta">Talk to an Expert</a>
+          <a href="contact.html?sample=true" class="btn btn-outline">Request a Sample</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -100,9 +110,12 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <div class="footer-logo"><img src="images/logo/logo (1).png" alt="BoxifyPack" class="footer-logo-img"></div>
-          <p>A reliable packaging sourcing partner focused on USA &amp; European markets. Custom SBS paperboard boxes for food, health, beauty, and gifts.</p>
-          <div class="footer-social" style="margin-top:12px;">
+          <div class="footer-logo">
+            <img src="images/logo/cp.svg" alt="" class="footer-logo-icon" width="28" height="35">
+            <span class="footer-logo-text">Boxify<em>Pack</em></span>
+          </div>
+          <p>Custom SBS folding cartons for pharmaceutical and supplement brands, with food, beauty, and gift packaging for export to the USA &amp; Europe.</p>
+          <div class="footer-social">
             <a href="https://linkedin.com/company/boxifypack" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="https://facebook.com/boxifypack" target="_blank" rel="noopener" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://instagram.com/boxifypack" target="_blank" rel="noopener" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -112,9 +125,9 @@
         </div>
         <div class="footer-col">
           <h4>Products</h4>
+          <p><a href="products/pharma.html">Pharma &amp; Supplements</a></p>
           <p><a href="products/food.html">Food &amp; Confectionery</a></p>
           <p><a href="products/health-beauty.html">Health &amp; Beauty</a></p>
-          <p><a href="products/pharma.html">Pharma &amp; Supplements</a></p>
           <p><a href="products/gift.html">Gift Box</a></p>
         </div>
         <div class="footer-col">
@@ -127,7 +140,8 @@
         <div class="footer-col">
           <h4>Contact</h4>
           <p><a href="mailto:sales@boxifypack.com">sales@boxifypack.com</a></p>
-          <div class="footer-payments" style="margin-top:12px;">
+          <p><a href="contact.html">Request a Quote</a></p>
+          <div class="footer-payments">
             <i class="fa-brands fa-cc-visa" title="Visa"></i>
             <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
             <i class="fa-brands fa-cc-paypal" title="PayPal"></i>
@@ -135,8 +149,11 @@
           </div>
         </div>
       </div>
-      <div class="footer-bottom" style="text-align:center;">
-        <p style="width:100%;">&copy; 2026 BoxifyPack. All rights reserved.</p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BoxifyPack. All rights reserved.</p>
+        <div class="footer-bottom-meta">
+          <span>FSC Certified</span><span>ISO 9001</span><span>Export to 40+ Countries</span>
+        </div>
       </div>
     </div>
   </footer>
@@ -146,6 +163,6 @@
     <a href="mailto:sales@boxifypack.com" class="float-btn float-btn-contact" title="Email Us"><i class="fa-solid fa-envelope"></i><span class="float-btn-label">Email Us</span></a>
   </div>
 
-  <script src="js/main.js?v=5"></script>
+  <script src="js/main.js?v=7"></script>
 </body>
 </html>
