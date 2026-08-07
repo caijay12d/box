@@ -9,6 +9,47 @@
 
 ---
 
+## ⚠️ 选样机原则（必读）
+
+**每一款的样机推荐，以网站 `products/*.html` 里该产品的 `product-desc` 为准**，不是凭中文产品名猜测。
+
+| 易混淆 | 网站描述关键词 | 应选样机 | ❌ 不要选 |
+|--------|----------------|----------|-----------|
+| **G1 vs G4** | G1：hidden **magnetic closure**，assembled rigid | 磁吸翻盖**已组装**硬盒 | — |
+| | G4：**Collapsible** SBS or **rigid-fold**，**efficient shipping and storage** | **平铺刀模 / 半折叠 / 可压扁运输**的盒 | 磁吸翻盖礼盒、磁吸折叠 luxury box（那是 G1 或高端 collapsible rigid，**看不出 flat-pack**） |
+
+---
+
+## 网站产品描述速查（23 款）
+
+| # | 网站英文描述摘要 | 盒型要点 |
+|---|------------------|----------|
+| P1 | CRC-tested **folding** structure (16 CFR §1700.20) | CR 插舌折叠盒 |
+| P2 | **Tall sleeve wrap** 300–400 gsm SBS | 纸套筒，不是外箱 |
+| P3 | **Outer carton for round bottles** | 圆瓶外箱 |
+| P4 | **Compact flip-top folding carton** | 翻盖折叠药盒（非泡罩为主） |
+| P5 | **Folding outer carton**, regulatory panels | 法规信息插舌盒 |
+| F1 | **Tuck-end** + **PET window** | 插舌开窗 |
+| F2 | **Folding carton**, matte lamination | 折叠茶盒 |
+| F3 | Food-grade carton + **display window** | 开窗零食盒 |
+| F4 | **Tuck-end or auto-bottom** | 插舌/自底糖果盒 |
+| F5 | **Premium SBS folding box** | 巧克力折叠盒 |
+| F6 | **Folding carton with insert** for jars | 折叠外盒+内托包罐 |
+| B1 | **Slim folding** profile | 细长口红盒 |
+| B2 | **Die-cut window carton** | 开窗面霜盒 |
+| B3 | **Tall sleeve wrap** | 精华纸套筒 |
+| B4 | **Compact folding carton** | 粉底方盒 |
+| B5 | **Tuck-end or sleeve** | 护肤通用盒 |
+| B6 | **Moisture-resistant SBS folding carton** for hair | 包瓶高折叠盒 |
+| G1 | **Rigid** + hidden **magnetic closure** | 磁吸硬礼盒（已组装） |
+| G2 | **Slide-open rigid** + inner tray | 抽屉硬盒 |
+| G3 | **Lid-and-base rigid** | 天地盖硬盒 |
+| G4 | **Collapsible** SBS or **rigid-fold** for **efficient shipping and storage** | **可折叠 flat-pack**，电商/订阅 |
+| G5 | **Rigid** + insert for bottles | 酒品硬礼盒+内托 |
+| G6 | **Luxury rigid** + embossing/foil/insert | 香水肩式/硬礼盒 |
+
+---
+
 ## 一、总览
 
 | 状态 | 数量 | 说明 |
@@ -243,9 +284,11 @@
 | 项目 | 内容 |
 |------|------|
 | 状态 | ✅ 有样机 |
+| **网站描述** | *Rigid box with hidden **magnetic closure** for seamless opening and premium feel.* |
+| **盒型要点** | **已组装**磁吸翻盖硬盒（与 G4 flat-pack 折叠运输盒不同） |
 | **主样机** | [pixpine · Luxury magnetic gift box](https://pixpine.com/free-luxury-magnetic-gift-box-mockup/) |
 | **备选** | [pixpine · Magnetic gift box (open/closed)](https://pixpine.com/free-magnetic-gift-box-mockup/) · [MockupShelf · Open magnetic box](https://www.mockupshelf.com/free-packaging-mockup-design-2/) · [mockups-design · Luxury business cards box (magnetic hinged)](https://mockups-design.com/luxury-business-cards-box-mockup/) |
-| **对标参考** | [pacagemockup · 6 magnetic folding gift box set](https://www.pacagemockup.com/6-free-magnetic-folding-gift-box-mockups-set/) |
+| **❌ 勿用于 G4** | 磁吸样机只给 G1；G4 见上文 unfolded / flat-pack |
 | 导出文件名 | `gift-magnetic.jpg` |
 
 ---
@@ -278,15 +321,19 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
-| **主样机** | [mockups-design · Folding box](https://mockups-design.com/folding-box-mockup/) |
-| **备选** | [pacagemockup · 6 magnetic folding gift box](https://www.pacagemockup.com/6-free-magnetic-folding-gift-box-mockups-set/) · [freepsdmock-up · Foldable box packaging](https://www.freepsdmock-up.com/new-desingner-foldable-box-packaging-mockup/) · [mockups-design · Free gift box](https://mockups-design.com/free-gift-box-mockup/) |
-| **对标参考** | [gitu · Magnetic folding gift box set](https://gitu.net/en/details/6-free-magnetic-folding-gift-box-mockup-psd-files) |
+| 状态 | ⚠️ 近似样机（务必对照描述） |
+| **网站描述** | *Collapsible SBS or rigid-fold structure for **efficient shipping and storage**.* · E-commerce gift packs, subscription boxes |
+| **盒型要点** | **可压扁运输的 flat-pack 折叠礼品盒**（SBS 折叠礼盒 或 collapsible rigid-fold），**不是** G1 那种已组装的磁吸翻盖硬礼盒 |
+| **主样机（推荐）** | [pacagemockup · Unfolded vertical box](https://www.pacagemockup.com/unfolded-vertical-box-mockup-free-psd/) — 展示**平铺刀模**，一眼看出可折叠运输 |
+| **备选 A** | [mockups-design · Free unfolded box](https://mockups-design.com/free-unfolded-box-mockup/) |
+| **备选 B** | [pixpine · Unfolded vertical box](https://pixpine.com/free-unfolded-vertical-box-mockup/) · [Good Mockups · Square unfolded box set](https://goodmockups.com/free-square-unfolded-box-packaging-mockup-psd-set/) |
+| **备选 C（组装态）** | [freepsdmock-up · Foldable box packaging](https://www.freepsdmock-up.com/new-desingner-foldable-box-packaging-mockup/) — 仅当需要「折好后」视角；**勿与 G1 磁吸盒混用** |
+| **❌ 禁用** | ~~magnetic folding gift box~~ · ~~mockups-design folding box（普通礼品盒，看不出 flat-pack）~~ — 客户会当成 G1 磁吸礼盒 |
+| **对标参考** | [PackPrinters · Collapsible rigid boxes (flat-fold)](https://packprinters.com/product/collapsible-rigid-boxes/) · [Seven Rainbow · Collapsible rigid / flat-packed](https://www.sevenrainbowpack.com/custom-collapsible-rigid-box/) · [PrintPack360 · Collapsible rigid wholesale](https://printpack360.com/product/custom-collapsible-rigid-boxes-wholesale/) |
+| **出图建议** | 官网卡片优先用 **平铺/半折叠** 角度；或拼一张「平铺 + 折好」对比图，强调 shipping & storage |
 | 导出文件名 | `gift-folding.jpg` |
 
 ---
-
-### G5 · 酒品礼盒 · Wine & Spirit Gift Box
 
 | 项目 | 内容 |
 |------|------|
