@@ -15,8 +15,15 @@
 
 | 易混淆 | 网站描述关键词 | 应选样机 | ❌ 不要选 |
 |--------|----------------|----------|-----------|
-| **G1 vs G4** | G1：hidden **magnetic closure**，assembled rigid | 磁吸翻盖**已组装**硬盒 | — |
-| | G4：**Collapsible** SBS or **rigid-fold**，**efficient shipping and storage** | **平铺刀模 / 半折叠 / 可压扁运输**的盒 | 磁吸翻盖礼盒、磁吸折叠 luxury box（那是 G1 或高端 collapsible rigid，**看不出 flat-pack**） |
+| **G1 vs G4** | G1：hidden **magnetic closure**，assembled rigid | 磁吸翻盖**已组装**硬盒 | 磁吸 folding luxury box 当 G4 |
+| | G4：**Collapsible** / **efficient shipping** | **平铺刀模 / flat-pack** | 已组装磁吸礼盒 |
+| **P4 vs 泡罩盒** | **flip-top folding carton**（翻盖折叠） | compact horizontal tuck / flip-top 小盒 | 以泡罩+外盒为主体的样机 |
+| **P2/B3 vs 外箱** | **Tall sleeve wrap**（纸套筒） | 套筒包住瓶身 / 平铺套筒刀模 | 普通 tall box 外箱、收缩膜 sleeve |
+| **P3 vs 纯盒** | **Outer carton for round bottles** | **瓶 + 外箱** 同框 | 只有盒子、没有圆瓶 |
+| **B6 vs 瓶+盒** | **SBS folding carton**（折叠纸盒） | **高窄折叠外盒** 为主 | 洗发水瓶占据画面主体 |
+| **B2 vs 管装** | **Die-cut window** + **jar** | 开窗盒 + **面霜罐** | 只有 tubes 的 window box |
+| **F5 vs 条形** | **Premium SBS folding box** | 标准矩形 **folding carton** | 仅巧克力「内包装条形」特写 |
+| **G5 vs 折叠** | **Rigid** + insert for **bottles** | 硬礼盒 + 内托 + 酒瓶 | 折叠 wine carton、木质盒 |
 
 ---
 
@@ -48,15 +55,43 @@
 | G5 | **Rigid** + insert for bottles | 酒品硬礼盒+内托 |
 | G6 | **Luxury rigid** + embossing/foil/insert | 香水肩式/硬礼盒 |
 
+### 逐款审核结果（对照 `products/*.html`）
+
+| # | 审核 | 说明 |
+|---|------|------|
+| P1 | ⚠️ | 描述要 CR 插舌；免费库无锁扣专用样机 |
+| P2 | ❌ | 描述是 **sleeve wrap**，不是外箱 |
+| P3 | ⚠️ | 描述强调 **round bottles**；需瓶+外箱同框 |
+| P4 | ⚠️ | 描述是 **flip-top carton**；泡罩样机仅作备选 |
+| P5 | ✅ | 法规插舌折叠外盒 — 匹配 |
+| F1 | ✅ | tuck-end + PET window — 匹配 |
+| F2 | ✅ | folding carton — 匹配 |
+| F3 | ✅ | display window carton — 匹配 |
+| F4 | ⚠️ | tuck-end **或** auto-bottom；需两种结构可选 |
+| F5 | ⚠️ | SBS **folding box**；勿只用巧克力内包条形图 |
+| F6 | ⚠️ | folding carton **+ insert** 包罐 |
+| B1 | ✅ | slim folding — 匹配 |
+| B2 | ⚠️ | die-cut window + **jar**；tube 样机不对 |
+| B3 | ❌ | 同 P2，**sleeve wrap** |
+| B4 | ✅ | compact folding carton — 匹配 |
+| B5 | ✅ | tuck-end or sleeve — 匹配 |
+| B6 | ⚠️ | 描述是 **folding carton**；勿以瓶为主角 |
+| G1 | ✅ | rigid magnetic — 匹配 |
+| G2 | ✅ | slide-open rigid + tray — 匹配 |
+| G3 | ✅ | lid-and-base rigid — 匹配 |
+| G4 | ⚠️ | collapsible flat-pack — 已修正，禁磁吸 folding |
+| G5 | ⚠️ | **rigid** + bottle insert；禁折叠 wine carton |
+| G6 | ✅ | luxury rigid fragrance — 匹配 |
+
 ---
 
 ## 一、总览
 
 | 状态 | 数量 | 说明 |
 |------|------|------|
-| ✅ 有样机 | 18 | 可直接下载 PSD 出图 |
-| ⚠️ 近似样机 | 3 | 用接近盒型的样机 + 必要时参考对标图微调 |
-| ❌ 需对标参考 | 2 | 免费库缺 CR 锁扣盒、纸套筒；见下文对标链接 |
+| ✅ 匹配 | 12 | 样机与网站描述一致，可直接出图 |
+| ⚠️ 需注意 | 9 | 见「逐款审核结果」；按各节 **主样机** 优先 |
+| ❌ 需对标 | 2 | P2、B3 纸套筒 — 免费库缺口大 |
 
 ---
 
@@ -66,11 +101,13 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ⚠️ 近似样机 |
-| 说明 | 免费库几乎没有「CR 锁扣」专用样机；用标准插舌盒 + 盒面示意锁扣即可 |
-| **主样机** | [mockups-design · Minimal box](https://mockups-design.com/minimal-box-mockup/) |
-| **备选** | [mockup3dfree · Straight tuck end rectangle](https://mockup3dfree.com/product/rectangle-box-packaging-mockup/) · [pixpine · Front tuck box](https://pixpine.com/free-front-tuck-box-mockup/) |
-| **对标参考** | [The Packaging Tree · CR folding cartons](https://thepackagingtree.com/child-resistant-folding-cartons)（看 push-tab / thumb-lock 结构） · [Cubit · Reverse tuck end](https://www.cubitpackaging.com/store/products/reverse-tuck-end-boxes) |
+| 审核 | ⚠️ |
+| **网站描述** | *CRC-tested **folding** structure meeting US 16 CFR §1700.20* |
+| **盒型要点** | CR **插舌折叠盒**（锁扣在盒结构上，不是独立塑料盖） |
+| **主样机** | [mockup3dfree · Straight tuck end rectangle](https://mockup3dfree.com/product/rectangle-box-packaging-mockup/) |
+| **备选** | [mockups-design · Minimal box](https://mockups-design.com/minimal-box-mockup/) · [pixpine · Front tuck box](https://pixpine.com/free-front-tuck-box-mockup/) |
+| **❌ 勿用** | 泡罩盒、硬礼盒、磁吸盒、套筒 |
+| **对标参考** | [The Packaging Tree · CR folding cartons](https://thepackagingtree.com/child-resistant-folding-cartons) |
 | 导出文件名 | `pharma-child-resistant.jpg` |
 
 ---
@@ -79,12 +116,13 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ❌ 需对标参考 |
-| 说明 | 免费库多为「收缩膜 sleeve」或「瓶+外箱」，少见纸套筒包住瓶身；建议瓶+高窄盒组合，或按对标图自己拼 |
-| **近似样机 A** | [Good Mockups · Vertical tall box](https://goodmockups.com/free-tall-box-packaging-grid-mockup-psd/)（高窄外盒） |
-| **近似样机 B** | [pikosm · Capsule bottle with box](https://pikosm.com/capsule-bottle-with-box-mockup-realistic-packaging/)（瓶+盒并排） |
-| **近似样机 C** | [pacagemockup · 4 pill bottle and box mockups](https://www.pacagemockup.com/tag/supplements/)（搜 supplement bottle box） |
-| **对标参考** | [MUGE · Supplement bottle + carton / printed sleeves](https://mugepackaging.com/industries/wellness) · [Packaging Hubs · sleeve box direction](https://packaginghubs.com/product/custom-vitamin-packaging/) |
+| 审核 | ❌ |
+| **网站描述** | ***Tall sleeve wrap** in 300–400 gsm SBS* · protein tubs, wellness bottles |
+| **盒型要点** | **纸套筒**包住瓶身/罐身，不是完整六面外箱 |
+| **近似 A** | [Good Mockups · Vertical tall box](https://goodmockups.com/free-tall-box-packaging-grid-mockup-psd/) — 仅当套筒做成「四面套」近似 |
+| **近似 B** | [pacagemockup · Unfolded vertical box](https://www.pacagemockup.com/unfolded-vertical-box-mockup-free-psd/) — 展示套筒展开刀模 |
+| **❌ 勿用** | [pikosm 瓶+外箱](https://pikosm.com/capsule-bottle-with-box-mockup-realistic-packaging/) 当主图（那是外箱不是 sleeve）· 收缩膜 shrink sleeve |
+| **对标参考** | [MUGE · printed sleeves / bottle + sleeve](https://mugepackaging.com/industries/wellness) · [Packaging Hubs · sleeve box](https://packaginghubs.com/product/custom-vitamin-packaging/) |
 | 导出文件名 | `pharma-supplement.jpg` |
 
 ---
@@ -93,10 +131,13 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
-| **主样机** | [mockups-design · Box mockup 70×100×60](https://mockups-design.com/packaging/box-mockup-70x100x60/) |
-| **备选** | [pikosm · Capsule bottle with box](https://pikosm.com/capsule-bottle-with-box-mockup-realistic-packaging/) · [gitu · Vitamin-D bottle & box](https://gitu.net/en/details/free-vitamin-d-drops-bottle-box-packaging-mockup-psd) |
-| **对标参考** | [Packaging Vista · Tuck end boxes](https://packagingvista.com/tuck-end-boxes) |
+| 审核 | ⚠️ |
+| **网站描述** | ***Outer carton for round bottles*** with label-panel print |
+| **盒型要点** | 画面里应有 **圆瓶 + 折叠外箱**（或外箱旁放瓶） |
+| **主样机** | [pikosm · Capsule bottle with box](https://pikosm.com/capsule-bottle-with-box-mockup-realistic-packaging/) |
+| **备选** | [gitu · Vitamin-D bottle & box](https://gitu.net/en/details/free-vitamin-d-drops-bottle-box-packaging-mockup-psd) · [mockups-design · Box 70×100×60](https://mockups-design.com/packaging/box-mockup-70x100x60/)（仅盒，无瓶时作备选） |
+| **❌ 勿用** | 只有盒子、没有瓶的样机当主图 |
+| **对标参考** | [Packaging Vista · Tuck end](https://packagingvista.com/tuck-end-boxes) |
 | 导出文件名 | `pharma-vitamin.jpg` |
 
 ---
@@ -105,10 +146,14 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
-| **主样机** | [pacagemockup · Pills blister box / tablet box](https://www.pacagemockup.com/pills-blister-box-tablet-box-mockup-psd/) |
-| **备选** | [Mockup World · Pills box with blister pack](https://www.mockupworld.co/free/pills-box-with-blister-pack-mockup/) · [Country4k · Paper box and tablets blister](https://country4k.com/product/free-paper-box-and-tablets-blister-mockup/) · [Designbolts · Pharmaceutical tablet box](https://www.designbolts.com/2020/08/25/free-pharmaceutical-medicine-tablet-box-packaging-mockup-psd/) |
-| **对标参考** | [mockups-design · Hanging box 110×30×30](https://mockups-design.com/packaging/hanging-box-mockup-110x30x30/)（紧凑横盒备选） |
+| 审核 | ⚠️ |
+| **网站描述** | *Compact **flip-top folding carton*** · tablet strips, small-format OTC |
+| **盒型要点** | **翻盖折叠小药盒**；泡罩可放在盒内但不应成为画面主体 |
+| **主样机** | [mockups-design · Hanging box 110×30×30](https://mockups-design.com/packaging/hanging-box-mockup-110x30x30/)（compact 横盒） |
+| **备选 A** | [dgmockup · Medicine box packaging](https://dgmockup.com/medicine-box-packaging-mockup-download-free-psd-template/) · [Good Mockups · Supplement medicine box](https://goodmockups.com/free-supplement-medicine-packaging-box-mockup-psd/) |
+| **备选 B** | [Pacdora · Medicine box（选 flat flip-top）](https://www.pacdora.com/tools/medicine-box-mockup) |
+| **备选 C（含泡罩）** | [pacagemockup · Pills blister box](https://www.pacagemockup.com/pills-blister-box-tablet-box-mockup-psd/) — 仅当需要展示药板；**裁掉或弱化泡罩** |
+| **❌ 勿用** | 以泡罩拉出为主体的样机当唯一主图 |
 | 导出文件名 | `pharma-pill.jpg` |
 
 ---
@@ -117,11 +162,12 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
-| 说明 | 素盒/大版面法规信息盒 → 用标准插舌盒，盒面留大白区即可 |
-| **主样机** | [mockups-design · Box mockup 100×80×28](https://mockups-design.com/packaging/box-mockup-100x80x28/) |
-| **备选** | [mockup3dfree · Rectangle straight tuck end](https://mockup3dfree.com/product/rectangle-box-packaging-mockup/) · [free-mockup.com · Medicine pill box](https://www.free-mockup.com/mockups/)（站内搜 medicine pill box） |
-| **对标参考** | [Cubit · Tuck end folding cartons](https://www.cubitpackaging.com/folding-cartons/tuck-end) |
+| 审核 | ✅ |
+| **网站描述** | ***Folding outer carton** with reserved panels for regulatory copy, lot codes* |
+| **盒型要点** | 素色插舌折叠盒，大版面留法规信息区 |
+| **主样机** | [mockup3dfree · Straight tuck end rectangle](https://mockup3dfree.com/product/rectangle-box-packaging-mockup/) |
+| **备选** | [mockups-design · Box 100×80×28](https://mockups-design.com/packaging/box-mockup-100x80x28/) |
+| **出图建议** | Smart Object 用 80% 留白，模拟法规文字区 |
 | 导出文件名 | `pharma-prescription.jpg` |
 
 ---
@@ -132,10 +178,10 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
+| 审核 | ✅ |
+| **网站描述** | ***Tuck-end carton with PET window*** and grease-proof interior coating |
 | **主样机** | [Designbolts · Tuck lid window box](https://www.designbolts.com/2017/07/05/free-tuck-lid-window-box-packaging-mockup-psd/) |
-| **备选** | [Mockup World · Tuck lid window box](https://www.mockupworld.co/free/tuck-lid-window-box-packaging-mockup/) · [mockuptree · Tuck lid window box](https://mockuptree.com/free/tuck-lid-window-box-mockup/) |
-| **对标参考** | [Dauxin · Folding carton designs (window die-cut)](https://www.dauxin.com/blog/folding-carton-designs/) |
+| **备选** | [Mockup World · Tuck lid window box](https://www.mockupworld.co/free/tuck-lid-window-box-packaging-mockup/) |
 | 导出文件名 | `Bakery Window Box.jpg` |
 
 ---
@@ -144,10 +190,11 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
+| 审核 | ✅ |
+| **网站描述** | ***Folding carton** with matte lamination, UV highlights, optional foil* |
 | **主样机** | [free-mockup.com · Tea box packaging](https://www.free-mockup.com/mockups/tea-box-packaging-mockup/) |
-| **备选** | [Mockup World · Tea box](https://www.mockupworld.co/free/tea-box-mockup/) · [free-mockup.com · Kraft tea box with window](https://www.free-mockup.com/mockups/tea-kraft-box-mockup/) · [mockups-design · Carton box](https://mockups-design.com/packaging/carton-box-mockup/) |
-| **对标参考** | [Packaging Vista · Tuck end / folding carton](https://packagingvista.com/tuck-end-boxes) |
+| **备选** | [Mockup World · Tea box](https://www.mockupworld.co/free/tea-box-mockup/) · [mockups-design · Carton box](https://mockups-design.com/packaging/carton-box-mockup/) |
+| **❌ 勿用** | 硬礼盒、铁罐（除非改产品描述） |
 | 导出文件名 | `Premium Tea Box.jpg` |
 
 ---
@@ -156,10 +203,11 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
-| **主样机** | [Designbolts · Tuck lid window box](https://www.designbolts.com/2017/07/05/free-tuck-lid-window-box-packaging-mockup-psd/)（开窗展示坚果） |
-| **备选** | [unblast · Snack packaging mockup](https://unblast.com/free-snack-packaging-mockup-psd/) · [mockups-design · Matt snack bag](https://mockups-design.com/packaging/)（若需袋装备选，本站要盒则用 window box） |
-| **对标参考** | [Cubit · Tuck end with window](https://www.cubitpackaging.com/folding-cartons/tuck-end) |
+| 审核 | ✅ |
+| **网站描述** | *Food-grade carton with **display window** and custom insert options* |
+| **主样机** | [Designbolts · Tuck lid window box](https://www.designbolts.com/2017/07/05/free-tuck-lid-window-box-packaging-mockup-psd/) |
+| **备选** | [unblast · Snack packaging](https://unblast.com/free-snack-packaging-mockup-psd/) |
+| **❌ 勿用** | [mockups-design · Snack **bag**](https://mockups-design.com/packaging/) 当主图（描述是 **carton** 纸盒） |
 | 导出文件名 | `Snack & Nut Box.jpg` |
 
 ---
@@ -168,10 +216,11 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
-| **主样机** | [freepsdmock-up.com · Candy box packaging](https://www.freepsdmock-up.com/free-candy-box-packaging-mockup/) |
-| **备选** | [Designbolts · Tuck lid window box](https://www.designbolts.com/2017/07/05/free-tuck-lid-window-box-packaging-mockup-psd/) · [mockups-design · Box mockup 65×115×65](https://mockups-design.com/packaging/box-mockup-65x115x65/) |
-| **对标参考** | [BR Printing · Tuck end box guide](https://www.brprinting.net/2025/11/27/the-ultimate-guide-to-tuck-end-boxs-types-uses-benefits/) |
+| 审核 | ⚠️ |
+| **网站描述** | ***Tuck-end or auto-bottom** structures* on bright SBS |
+| **主样机（插舌）** | [mockup3dfree · Straight tuck end](https://mockup3dfree.com/product/rectangle-box-packaging-mockup/) · [freepsdmock-up · Candy box](https://www.freepsdmock-up.com/free-candy-box-packaging-mockup/) |
+| **主样机（自底）** | [pacagemockup · Tuck top box](https://www.pacagemockup.com/tuck-top-box-mockup/) · [Pacdora · auto-lock bottom carton](https://www.pacdora.com/tools/carton-box-mockup) |
+| **❌ 勿用** | 透明塑料 candy box（pacagemockup clear plastic）— 描述是 **SBS folding carton** |
 | 导出文件名 | `Candy & Confectionery Boxes.jpg` |
 
 ---
@@ -180,10 +229,11 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
-| **主样机** | [pixpine · Chocolate bar packaging](https://pixpine.com/free-chocolate-bar-packaging-psd-mockup/) |
-| **备选** | [Designbolts · Chocolate bar packaging](https://www.designbolts.com/2020/10/21/free-chocolate-bar-packaging-mockup-psd/) · [unblast · Chocolate mockup](https://unblast.com/free-chocolate-mockup-psd-2/) · [mockups-design · Carton box](https://mockups-design.com/packaging/carton-box-mockup/) |
-| **对标参考** | [Dauxin · Reverse tuck end](https://www.dauxin.com/blog/folding-carton-designs/) |
+| 审核 | ⚠️ |
+| **网站描述** | ***Premium SBS folding box*** with foil accents（折叠外盒，不是硬礼盒） |
+| **主样机** | [mockups-design · Carton box](https://mockups-design.com/packaging/carton-box-mockup/) · [mockup3dfree · Rectangle tuck end](https://mockup3dfree.com/product/rectangle-box-packaging-mockup/) |
+| **备选** | [pixpine · Chocolate bar packaging](https://pixpine.com/free-chocolate-bar-packaging-psd-mockup/) — 偏「条形内包装」视角，可用但需确认是 **carton 外盒** |
+| **❌ 勿用** | 硬礼盒、磁吸盒 |
 | 导出文件名 | `Chocolate Truffle Box.jpg` |
 
 ---
@@ -192,12 +242,14 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ⚠️ 近似样机 |
-| 说明 | 免费库多为「玻璃罐单瓶」，少见「折叠外盒 + 内托包罐」；可用开窗/auto-bottom 盒近似，或对标图自行合成 |
-| **近似样机 A** | [mockups-design · Carton box](https://mockups-design.com/packaging/carton-box-mockup/)（略宽折叠盒） |
-| **近似样机 B** | [pacagemockup · Honey jam jar set](https://www.pacagemockup.com/free-honey-jam-jar-mockup-set/)（仅罐，可配外盒 PSD 叠图） |
-| **在线刀模** | [Pacdora · Carton box mockup](https://www.pacdora.com/tools/carton-box-mockup)（选 tuck-end / auto-lock bottom，浏览器出 PNG） |
-| **对标参考** | [INNORHINO · Window carton for 150–180ml glass jar](https://innorhino.com/product/foldingcarton/fc-ttab-906565) · [LeTai · Mason jar folding carton with insert](https://letaipackaging.com/custom-jar-packaging/) · [Dauxin · Snap lock bottom for glass jars](https://www.dauxin.com/blog/folding-carton-designs/) |
+| 审核 | ⚠️ |
+| **网站描述** | ***Protective folding carton with insert options for jar products*** |
+| **盒型要点** | **折叠外盒 + 内托** 包玻璃罐；不是硬礼盒套装 |
+| **主样机** | [Pacdora · auto-lock / tuck carton（包 jar 尺寸）](https://www.pacdora.com/tools/carton-box-mockup) |
+| **备选 A** | [mockups-design · Carton box](https://mockups-design.com/packaging/carton-box-mockup/)（略宽盒型） |
+| **备选 B** | 罐 [pacagemockup · Honey jam jar](https://www.pacagemockup.com/free-honey-jam-jar-mockup-set/) + 外盒 PSD **合成** |
+| **❌ 勿用** | 仅玻璃罐、无外盒 · 硬礼盒 · 快递纸箱 |
+| **对标参考** | [INNORHINO · Window carton for glass jar](https://innorhino.com/product/foldingcarton/fc-ttab-906565) · [LeTai · Mason jar folding carton + insert](https://letaipackaging.com/custom-jar-packaging/) |
 | 导出文件名 | `Jam & Honey Boxes.jpg` |
 
 ---
@@ -208,10 +260,10 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
-| **主样机** | [mockups-design · Box mockup 50×115×35](https://mockups-design.com/packaging/box-mockup-50x115x35/) |
-| **备选** | [Mockup Den · Lipstick box](https://mockupden.com/free-lipstick-box-mockup-psd-template/) · [cssauthor · Lipstick box](https://cssauthor.com/mockup/free-lipstick-box-mockup-psd/) · [unblast · Matte lipstick packaging](https://unblast.com/free-matte-lipstick-packaging-mockup-psd/) |
-| **对标参考** | [Cubit · 2×2×4 lipstick tuck end size](https://www.cubitpackaging.com/folding-cartons/tuck-end) |
+| 审核 | ✅ |
+| **网站描述** | ***Slim folding profile*** with soft-touch lamination and foil panels |
+| **主样机** | [mockups-design · Box 50×115×35](https://mockups-design.com/packaging/box-mockup-50x115x35/) |
+| **备选** | [Mockup Den · Lipstick box](https://mockupden.com/free-lipstick-box-mockup-psd-template/)（含口红管时可保留，但盒须 slim） |
 | 导出文件名 | `beauty-lipstick.jpg` |
 
 ---
@@ -220,10 +272,11 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
-| **主样机** | [Graflick · Transparent window box](https://graflick.com/transparent-window-box-mockup-with-cosmetic-tubes/) |
-| **备选** | [pacagemockup · Cosmetic cream jar and box set](https://www.pacagemockup.com/free-cosmetic-cream-jar-and-box-packaging-mockups/) · [Designbolts · Tuck lid window box](https://www.designbolts.com/2017/07/05/free-tuck-lid-window-box-packaging-mockup-psd/) |
-| **对标参考** | [Packaging Vista · Die-cut window cartons](https://packagingvista.com/tuck-end-boxes) |
+| 审核 | ⚠️ |
+| **网站描述** | ***Die-cut window carton*** to showcase **jar** products |
+| **主样机** | [pacagemockup · Cosmetic cream jar and box set](https://www.pacagemockup.com/free-cosmetic-cream-jar-and-box-packaging-mockups/) |
+| **备选** | [Designbolts · Tuck lid window box](https://www.designbolts.com/2017/07/05/free-tuck-lid-window-box-packaging-mockup-psd/) |
+| **❌ 勿用** | [Graflick · Window box with **tubes**](https://graflick.com/transparent-window-box-mockup-with-cosmetic-tubes/) 当主图 — 描述是 **jar** 面霜罐 |
 | 导出文件名 | `beauty-cream-window.jpg` |
 
 ---
@@ -232,11 +285,12 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ⚠️ 近似样机 |
-| 说明 | 与 P2 类似，纸套筒较少；用滴管瓶 + 高窄外盒即可 |
-| **主样机** | [mockups-design · Minimal box (45×140×45)](https://mockups-design.com/minimal-box-mockup/) |
-| **备选** | [mockups-design · Amber/Clear dropper bottle](https://mockups-design.com/packaging/) · [pacagemockup · 2 dropper bottle with box](https://www.pacagemockup.com/)（站内搜 dropper bottle box） · [Good Mockups · Vertical tall box](https://goodmockups.com/free-tall-box-packaging-grid-mockup-psd/) |
-| **对标参考** | [MUGE · Wellness sleeves / tall carton](https://mugepackaging.com/industries/wellness) |
+| 审核 | ❌ |
+| **网站描述** | ***Tall sleeve wrap*** · facial serums, **dropper bottles** |
+| **盒型要点** | 同 **P2**，纸套筒包滴管瓶；不是 tall outer carton |
+| **近似** | [pacagemockup · Unfolded vertical box](https://www.pacagemockup.com/unfolded-vertical-box-mockup-free-psd/) · 滴管瓶 [mockups-design · Dropper bottle](https://mockups-design.com/packaging/) + 套筒合成 |
+| **❌ 勿用** | [Minimal box 45×140×45](https://mockups-design.com/minimal-box-mockup/) 当套筒（那是外箱） |
+| **对标参考** | [MUGE · sleeves / dropper packaging](https://mugepackaging.com/industries/wellness) |
 | 导出文件名 | `beauty-serum-sleeve.jpg` |
 
 ---
@@ -245,10 +299,11 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
-| **主样机** | [mockups-design · Box mockup 75×75×75](https://mockups-design.com/packaging/box-mockup-75x75x75/) |
-| **备选** | [dgmockup · Plastic face powder bottle with box](https://dgmockup.com/plastic-face-powder-bottle-free-psd-mockup/) · [Resource Boy · Powder cosmetics packaging](https://resourceboy.com/mockups/powder-cosmetics-packaging-mockup/) · [CreativeBooster · Compact powder packaging set](https://creativebooster.net/products/free-compact-powder-packaging-set-mockup-psd-3900805) |
-| **对标参考** | [mockups-design · Box mockup 65×50×65](https://mockups-design.com/packaging/box-mockup-65x50x65/) |
+| 审核 | ✅ |
+| **网站描述** | ***Compact folding carton*** · liquid foundation, **powder compacts** |
+| **主样机** | [mockups-design · Box 75×75×75](https://mockups-design.com/packaging/box-mockup-75x75x75/) |
+| **备选** | [dgmockup · Face powder bottle with box](https://dgmockup.com/plastic-face-powder-bottle-free-psd-mockup/) — 粉饼+盒同框时可选用 |
+| **❌ 勿用** | 面霜罐 jar 开窗盒 |
 | 导出文件名 | `beauty-foundation.jpg` |
 
 ---
@@ -257,10 +312,10 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
-| **主样机** | [mockups-design · Box mockup 65×115×65](https://mockups-design.com/packaging/box-mockup-65x115x65/) |
-| **备选** | [mockup3dfree · Rectangle tuck end](https://mockup3dfree.com/product/rectangle-box-packaging-mockup/) · [pacagemockup · Cosmetic bottle with box](https://www.pacagemockup.com/cosmetic-bottle-mockup-with-box-mockup/) |
-| **对标参考** | [Packaging Vista · Reverse tuck end](https://packagingvista.com/tuck-end-boxes) |
+| 审核 | ✅ |
+| **网站描述** | *Versatile **tuck-end or sleeve** cartons* for multi-SKU ranges |
+| **主样机** | [mockup3dfree · Rectangle tuck end](https://mockup3dfree.com/product/rectangle-box-packaging-mockup/) |
+| **备选** | [mockups-design · Box 65×115×65](https://mockups-design.com/packaging/box-mockup-65x115x65/) |
 | 导出文件名 | `beauty-skincare.jpg` |
 
 ---
@@ -269,10 +324,12 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
-| **主样机** | [unblast · Pump bottle with box](https://unblast.com/free-pump-bottle-with-box-mockup-psd/) |
-| **备选** | [mockuptree · Bottle & box cosmetic / shampoo](https://mockuptree.com/free/bottle-box-cosmetic-mockup/) · [Good Mockups · Vertical tall box](https://goodmockups.com/free-tall-box-packaging-grid-mockup-psd/) · [freebiesmockup · Shampoo packaging](https://www.freebiesmockup.com/download/free-shampoo-packaging-mockup/) |
-| **对标参考** | [Packaging Hubs · Tall carton for bottles](https://packaginghubs.com/product/custom-vitamin-packaging/) |
+| 审核 | ⚠️ |
+| **网站描述** | ***Moisture-resistant SBS folding carton*** for shampoo, conditioner bottles |
+| **盒型要点** | 画面主体是 **折叠外盒**；瓶可小比例入镜，但不要「瓶+盒」瓶占主导 |
+| **主样机** | [Good Mockups · Vertical tall box](https://goodmockups.com/free-tall-box-packaging-grid-mockup-psd/) |
+| **备选** | [mockups-design · Minimal box](https://mockups-design.com/minimal-box-mockup/) · [unblast · Pump bottle with box](https://unblast.com/free-pump-bottle-with-box-mockup-psd/)（需裁切突出盒型） |
+| **❌ 勿用** | [freebiesmockup · Shampoo **bottle only**](https://www.freebiesmockup.com/download/free-shampoo-packaging-mockup/) 无主盒 |
 | 导出文件名 | `beauty-hair-care.jpg` |
 
 ---
@@ -283,12 +340,11 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
-| **网站描述** | *Rigid box with hidden **magnetic closure** for seamless opening and premium feel.* |
-| **盒型要点** | **已组装**磁吸翻盖硬盒（与 G4 flat-pack 折叠运输盒不同） |
+| 审核 | ✅ |
+| **网站描述** | ***Rigid box with hidden magnetic closure*** for seamless opening |
 | **主样机** | [pixpine · Luxury magnetic gift box](https://pixpine.com/free-luxury-magnetic-gift-box-mockup/) |
-| **备选** | [pixpine · Magnetic gift box (open/closed)](https://pixpine.com/free-magnetic-gift-box-mockup/) · [MockupShelf · Open magnetic box](https://www.mockupshelf.com/free-packaging-mockup-design-2/) · [mockups-design · Luxury business cards box (magnetic hinged)](https://mockups-design.com/luxury-business-cards-box-mockup/) |
-| **❌ 勿用于 G4** | 磁吸样机只给 G1；G4 见上文 unfolded / flat-pack |
+| **备选** | [MockupShelf · Open magnetic box](https://www.mockupshelf.com/free-packaging-mockup-design-2/) · [pixpine · Magnetic gift box](https://pixpine.com/free-magnetic-gift-box-mockup/) |
+| **❌ 勿用于 G4** | 磁吸样机只属于 G1 |
 | 导出文件名 | `gift-magnetic.jpg` |
 
 ---
@@ -297,10 +353,12 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
+| 审核 | ✅ |
+| **网站描述** | ***Slide-open rigid box** with **inner tray*** for unboxing presentation |
 | **主样机** | [mockups-design · Sliding drawer box](https://mockups-design.com/sliding-drawer-box-mockup/) |
-| **备选** | [free-mockup.com · Opened slide box](https://www.free-mockup.com/mockups/opened-slide-box-mockup/)（站内搜 slide box） |
-| **对标参考** | [mockups-design · Elegant jewelry box](https://mockups-design.com/elegant-jewelry-box-mockup/)（天地盖备选视角） |
+| **备选** | [free-mockup.com · Opened slide box](https://www.free-mockup.com/mockups/opened-slide-box-mockup/) |
+| **出图建议** | 选 **抽屉拉开 / 露出内托** 的角度 |
+| **❌ 勿用** | 天地盖、磁吸翻盖 |
 | 导出文件名 | `gift-drawer.jpg` |
 
 ---
@@ -309,10 +367,10 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
+| 审核 | ✅ |
+| **网站描述** | ***Classic lid-and-base rigid** construction* |
 | **主样机** | [free-mockup.com · Rigid box with lid (3D)](https://www.free-mockup.com/mockups/rigid-box-with-lid-mockup-3d/) |
-| **备选** | [free-mockup.com · Rigid box with lid packaging](https://www.free-mockup.com/mockups/rigid-box-with-lid-packaging-mockup/) · [freepikes · Luxury two piece rigid box](https://freepikes.com/luxury-two-piece-rigid-box-mockup/) · [mockups-design · Elegant jewelry box](https://mockups-design.com/elegant-jewelry-box-mockup/) |
-| **对标参考** | [MockupShelf · Lid and base rigid box tags](https://www.mockupshelf.com/free-packaging-mockup-design-2/) |
+| **备选** | [freepikes · Luxury two piece rigid box](https://freepikes.com/luxury-two-piece-rigid-box-mockup/) · [mockups-design · Elegant jewelry box](https://mockups-design.com/elegant-jewelry-box-mockup/) |
 | 导出文件名 | `gift-two-piece.jpg` |
 
 ---
@@ -321,26 +379,28 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ⚠️ 近似样机（务必对照描述） |
-| **网站描述** | *Collapsible SBS or rigid-fold structure for **efficient shipping and storage**.* · E-commerce gift packs, subscription boxes |
-| **盒型要点** | **可压扁运输的 flat-pack 折叠礼品盒**（SBS 折叠礼盒 或 collapsible rigid-fold），**不是** G1 那种已组装的磁吸翻盖硬礼盒 |
-| **主样机（推荐）** | [pacagemockup · Unfolded vertical box](https://www.pacagemockup.com/unfolded-vertical-box-mockup-free-psd/) — 展示**平铺刀模**，一眼看出可折叠运输 |
-| **备选 A** | [mockups-design · Free unfolded box](https://mockups-design.com/free-unfolded-box-mockup/) |
-| **备选 B** | [pixpine · Unfolded vertical box](https://pixpine.com/free-unfolded-vertical-box-mockup/) · [Good Mockups · Square unfolded box set](https://goodmockups.com/free-square-unfolded-box-packaging-mockup-psd-set/) |
-| **备选 C（组装态）** | [freepsdmock-up · Foldable box packaging](https://www.freepsdmock-up.com/new-desingner-foldable-box-packaging-mockup/) — 仅当需要「折好后」视角；**勿与 G1 磁吸盒混用** |
-| **❌ 禁用** | ~~magnetic folding gift box~~ · ~~mockups-design folding box（普通礼品盒，看不出 flat-pack）~~ — 客户会当成 G1 磁吸礼盒 |
-| **对标参考** | [PackPrinters · Collapsible rigid boxes (flat-fold)](https://packprinters.com/product/collapsible-rigid-boxes/) · [Seven Rainbow · Collapsible rigid / flat-packed](https://www.sevenrainbowpack.com/custom-collapsible-rigid-box/) · [PrintPack360 · Collapsible rigid wholesale](https://printpack360.com/product/custom-collapsible-rigid-boxes-wholesale/) |
-| **出图建议** | 官网卡片优先用 **平铺/半折叠** 角度；或拼一张「平铺 + 折好」对比图，强调 shipping & storage |
+| 审核 | ⚠️ |
+| **网站描述** | ***Collapsible** SBS or rigid-fold for **efficient shipping and storage*** · e-commerce, subscription |
+| **盒型要点** | **Flat-pack 可压扁运输**；不是 G1 磁吸硬盒 |
+| **主样机** | [pacagemockup · Unfolded vertical box](https://www.pacagemockup.com/unfolded-vertical-box-mockup-free-psd/) |
+| **备选** | [mockups-design · Free unfolded box](https://mockups-design.com/free-unfolded-box-mockup/) · [pixpine · Unfolded vertical box](https://pixpine.com/free-unfolded-vertical-box-mockup/) · [freepsdmock-up · Foldable box](https://www.freepsdmock-up.com/new-desingner-foldable-box-packaging-mockup/) |
+| **❌ 禁用** | magnetic folding gift box · mockups-design folding box（普通礼品盒）· G1 磁吸样机 |
+| **对标参考** | [PackPrinters · Collapsible rigid flat-fold](https://packprinters.com/product/collapsible-rigid-boxes/) |
 | 导出文件名 | `gift-folding.jpg` |
 
 ---
 
+### G5 · 酒品礼盒 · Wine & Spirit Gift Box
+
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
+| 审核 | ⚠️ |
+| **网站描述** | ***Rigid gift box with custom insert** for single or twin bottle* |
+| **盒型要点** | **硬礼盒 + 内托 + 酒瓶**；不是折叠 wine carton |
 | **主样机** | [FreePSDvn · Wine bottle gift box](https://freepsdvn.com/mockup/wine-bottle-gift-box-mock-up-template-wh6ffwn/) |
-| **备选** | [pacagemockup · Burgundy wine bottle + box (3 views)](https://www.pacagemockup.com/free-burgundy-pink-wine-bottle-packaging-mockups/) · [mockups-design · Wine/juice carton box](https://mockups-design.com/packaging/wine-juice-carton-box-mockup/) · [mockupnest · Wooden wine box](https://mockupnest.com/free-wooden-wine-box-mockup/) |
-| **对标参考** | [Yiklee · Glass jar / wine rigid gift boxes](https://www.yikleepackaging.com/products/348.html) |
+| **备选** | [pacagemockup · Burgundy wine bottle + box](https://www.pacagemockup.com/free-burgundy-pink-wine-bottle-packaging-mockups/) |
+| **❌ 勿用** | [mockups-design · Wine/**juice carton**](https://mockups-design.com/packaging/wine-juice-carton-box-mockup/) — 那是 **folding carton**，不是 rigid gift · 木质盒（除非改描述） |
+| **对标参考** | [Yiklee · Rigid gift box with insert](https://www.yikleepackaging.com/products/348.html) |
 | 导出文件名 | `Wine & Spirit Gift Boxes.jpg` |
 
 ---
@@ -349,10 +409,11 @@
 
 | 项目 | 内容 |
 |------|------|
-| 状态 | ✅ 有样机 |
+| 审核 | ✅ |
+| **网站描述** | ***Luxury rigid box** with embossing, foil, and **fitted insert** for fragrance bottles* |
 | **主样机** | [gitu · Luxury gapped shoulder gift box](https://gitu.net/en/details/free-luxury-gapped-shoulder-gift-box-mockup-psd) |
-| **备选** | [pacagemockup · Perfume bottle and box](https://www.pacagemockup.com/perfume-packaging-bottle-and-box-mockup/) · [mockupfeed · Luxury perfume packaging](https://mockupfeed.com/1485-luxury-perfume-packaging-free-mockup) · [freebiesmockup · Luxury scent packaging](https://www.freebiesmockup.com/download/free-luxury-scent-packaging-mockup/) |
-| **对标参考** | [mockups-design · Elegant jewelry box](https://mockups-design.com/elegant-jewelry-box-mockup/)（肩式/套盒硬盒） |
+| **备选** | [pacagemockup · Perfume bottle and box](https://www.pacagemockup.com/perfume-packaging-bottle-and-box-mockup/) · [mockupfeed · Luxury perfume packaging](https://mockupfeed.com/1485-luxury-perfume-packaging-free-mockup) |
+| **❌ 勿用** | 折叠插舌盒、SBS 薄纸盒 |
 | 导出文件名 | `beauty-perfume.jpg` |
 
 ---
@@ -386,14 +447,19 @@
 
 ---
 
-## 八、优先处理顺序（盒型问题最大）
+## 八、优先处理顺序（描述 vs 样机偏差最大）
 
-1. **F6** 果酱蜂蜜 — 对标 INNORHINO 开窗折叠盒  
-2. **P2** 套筒 — 对标 MUGE 瓶+套筒  
-3. **P1** 儿童安全 — 插舌盒 + CR 对标结构  
-4. **B4** 粉底 · **B6** 护发 · **F4** 糖果  
+1. **G4** flat-pack 折叠礼盒（禁磁吸 folding）  
+2. **P2 / B3** 纸套筒（免费库缺口）  
+3. **F6** 折叠外盒 + 内托包罐  
+4. **P4** flip-top（非泡罩主图）  
+5. **B6** 折叠外盒为主（非瓶为主）  
+6. **B2** 开窗 + jar（非 tube）  
+7. **P3** 瓶 + 外箱同框  
+8. **G5** rigid 酒礼盒（非 folding wine carton）  
+9. **F5** SBS folding box（非仅条形内包）
 
-其余 17 款可直接按 ✅ 样机链接批量出图。
+其余 ✅ 款可按各节主样机批量出图。
 
 ---
 
