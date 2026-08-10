@@ -118,11 +118,12 @@
 |------|------|
 | 审核 | ❌ |
 | **网站描述** | ***Tall sleeve wrap** in 300–400 gsm SBS* · protein tubs, wellness bottles |
-| **盒型要点** | **纸套筒**包住瓶身/罐身，不是完整六面外箱 |
-| **近似 A** | [Good Mockups · Vertical tall box](https://goodmockups.com/free-tall-box-packaging-grid-mockup-psd/) — 仅当套筒做成「四面套」近似 |
-| **近似 B** | [pacagemockup · Unfolded vertical box](https://www.pacagemockup.com/unfolded-vertical-box-mockup-free-psd/) — 展示套筒展开刀模 |
-| **❌ 勿用** | [pikosm 瓶+外箱](https://pikosm.com/capsule-bottle-with-box-mockup-realistic-packaging/) 当主图（那是外箱不是 sleeve）· 收缩膜 shrink sleeve |
-| **对标参考** | [MUGE · printed sleeves / bottle + sleeve](https://mugepackaging.com/industries/wellness) · [Packaging Hubs · sleeve box](https://packaginghubs.com/product/custom-vitamin-packaging/) |
+| **盒型要点** | **纸板套筒**（slipcover）包住瓶/罐，上下可露；不是六面外箱，不是收缩膜 |
+| **结构对标（主）** | [PM Packaging · Paperboard carton sleeves](https://pmpackaging.com/product-catalog/boxes-and-cartons/sleeve-packaging) — 明确区分 paperboard vs shrink |
+| **结构对标** | [Blue Box · Packaging sleeves](https://www.blueboxpackaging.com/product/packaging-sleeves/) |
+| **在线生成** | [Pacdora](https://www.pacdora.com/tools/carton-box-mockup) — 选 sleeve/slipcover，勿选 full tuck carton |
+| **❌ 勿用** | [DG MOCKUP · Glass bottle sleeve](https://dgmockup.com/glass-bottle-sleeve-mockup-download-free-psd-template/)（饮料瓶贴膜）· [DG sliding sleeve+inner box](https://dgmockup.com/free-product-box-with-sliding-sleeve-psd-mockup/) · [Unfolded vertical box](https://www.pacagemockup.com/unfolded-vertical-box-mockup-free-psd/)（完整盒刀模）· [pikosm 瓶+外箱](https://pikosm.com/capsule-bottle-with-box-mockup-realistic-packaging/) · 收缩膜 |
+| **说明** | 免费库几乎无「纸套筒包蛋白罐」准确 PSD → **对标结构 + AI 生成** 比硬套错样机更准 |
 | 导出文件名 | `pharma-supplement.jpg` |
 
 ---
@@ -192,9 +193,9 @@
 |------|------|
 | 审核 | ✅ |
 | **网站描述** | ***Folding carton** with matte lamination, UV highlights, optional foil* |
-| **主样机** | [free-mockup.com · Tea box packaging](https://www.free-mockup.com/mockups/tea-box-packaging-mockup/) |
-| **备选** | [Mockup World · Tea box](https://www.mockupworld.co/free/tea-box-mockup/) · [mockups-design · Carton box](https://mockups-design.com/packaging/carton-box-mockup/) |
-| **❌ 勿用** | 硬礼盒、铁罐（除非改产品描述） |
+| **主样机** | [free-mockup.com · Kraft tea box with window](https://www.free-mockup.com/mockups/tea-kraft-box-mockup/) — 明确 cardboard |
+| **备选** | [Mockup World · Tea bag box](https://www.mockupworld.co/free/tea-box-mockup/) · [mockup3dfree · Straight tuck end](https://mockup3dfree.com/product/rectangle-box-packaging-mockup/) |
+| **❌ 勿用** | 透明 PET/塑料茶盒 · 铁罐 · 硬礼盒 · [mockups-design · Carton box](https://mockups-design.com/packaging/carton-box-mockup/)（饮料纸盒） |
 | 导出文件名 | `Premium Tea Box.jpg` |
 
 ---
@@ -218,9 +219,9 @@
 |------|------|
 | 审核 | ⚠️ |
 | **网站描述** | ***Tuck-end or auto-bottom** structures* on bright SBS |
-| **主样机（插舌）** | [mockup3dfree · Straight tuck end](https://mockup3dfree.com/product/rectangle-box-packaging-mockup/) · [freepsdmock-up · Candy box](https://www.freepsdmock-up.com/free-candy-box-packaging-mockup/) |
-| **主样机（自底）** | [pacagemockup · Tuck top box](https://www.pacagemockup.com/tuck-top-box-mockup/) · [Pacdora · auto-lock bottom carton](https://www.pacdora.com/tools/carton-box-mockup) |
-| **❌ 勿用** | 透明塑料 candy box（pacagemockup clear plastic）— 描述是 **SBS folding carton** |
+| **主样机（插舌）** | [mockup3dfree · Straight tuck end](https://mockup3dfree.com/product/rectangle-box-packaging-mockup/) · [mockups-design · Box 70×100×60](https://mockups-design.com/packaging/box-mockup-70x100x60/) |
+| **主样机（自底）** | [Pacdora · auto-lock bottom carton](https://www.pacdora.com/tools/carton-box-mockup) · [pacagemockup · Tuck top box](https://www.pacagemockup.com/tuck-top-box-mockup/)（下载前确认是 paper carton） |
+| **❌ 勿用** | 透明塑料 candy box · 棺材/万圣节 novelty · 硬礼盒 |
 | 导出文件名 | `Candy & Confectionery Boxes.jpg` |
 
 ---
@@ -231,9 +232,9 @@
 |------|------|
 | 审核 | ⚠️ |
 | **网站描述** | ***Premium SBS folding box*** with foil accents（折叠外盒，不是硬礼盒） |
-| **主样机** | [mockups-design · Carton box](https://mockups-design.com/packaging/carton-box-mockup/) · [mockup3dfree · Rectangle tuck end](https://mockup3dfree.com/product/rectangle-box-packaging-mockup/) |
-| **备选** | [pixpine · Chocolate bar packaging](https://pixpine.com/free-chocolate-bar-packaging-psd-mockup/) — 偏「条形内包装」视角，可用但需确认是 **carton 外盒** |
-| **❌ 勿用** | 硬礼盒、磁吸盒 |
+| **主样机** | [mockup3dfree · Rectangle tuck end](https://mockup3dfree.com/product/rectangle-box-packaging-mockup/) |
+| **备选** | [mockups-design · Box 70×100×60](https://mockups-design.com/packaging/box-mockup-70x100x60/) · [Box 100×80×28](https://mockups-design.com/packaging/box-mockup-100x80x28/) |
+| **❌ 勿用** | [mockups-design · Carton box](https://mockups-design.com/packaging/carton-box-mockup/)（页面写明 juices/drinks/**milk** 饮料纸盒）· [pixpine · Chocolate bar packaging](https://pixpine.com/free-chocolate-bar-packaging-psd-mockup/)（条形包装纸，非 folding carton）· 硬礼盒、磁吸盒、瓦楞 mailer |
 | 导出文件名 | `Chocolate Truffle Box.jpg` |
 
 ---
@@ -287,10 +288,9 @@
 |------|------|
 | 审核 | ❌ |
 | **网站描述** | ***Tall sleeve wrap*** · facial serums, **dropper bottles** |
-| **盒型要点** | 同 **P2**，纸套筒包滴管瓶；不是 tall outer carton |
-| **近似** | [pacagemockup · Unfolded vertical box](https://www.pacagemockup.com/unfolded-vertical-box-mockup-free-psd/) · 滴管瓶 [mockups-design · Dropper bottle](https://mockups-design.com/packaging/) + 套筒合成 |
-| **❌ 勿用** | [Minimal box 45×140×45](https://mockups-design.com/minimal-box-mockup/) 当套筒（那是外箱） |
-| **对标参考** | [MUGE · sleeves / dropper packaging](https://mugepackaging.com/industries/wellness) |
+| **盒型要点** | 同 **P2**，纸板套筒包滴管瓶；不是 tall outer carton，不是收缩膜 |
+| **结构对标** | 同 P2：[PM Packaging sleeves](https://pmpackaging.com/product-catalog/boxes-and-cartons/sleeve-packaging) |
+| **❌ 勿用** | [DG Glass bottle sleeve](https://dgmockup.com/glass-bottle-sleeve-mockup-download-free-psd-template/)（饮料贴膜）· [Unfolded vertical box](https://www.pacagemockup.com/unfolded-vertical-box-mockup-free-psd/) · [Minimal box](https://mockups-design.com/minimal-box-mockup/) 当套筒（那是外箱） |
 | 导出文件名 | `beauty-serum-sleeve.jpg` |
 
 ---
