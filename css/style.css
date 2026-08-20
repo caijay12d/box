@@ -331,17 +331,19 @@ ul,ol { list-style:none; }
 
 .product-card {
   background:#fff; border:1px solid var(--border); border-radius:var(--radius);
-  overflow:hidden; transition:all var(--transition);
+  overflow:hidden; transition:box-shadow var(--transition);
   position:relative; display:flex; flex-direction:column;
+  cursor:pointer;
 }
 .product-card:hover { box-shadow:var(--shadow-hover); }
 
 .product-card .card-img-wrap { overflow:hidden; position:relative; }
 .product-card img {
   width:100%; aspect-ratio:4/3; object-fit:cover; background:var(--bg-alt);
-  transition:transform .5s var(--transition-slow);
+  transform:scale(1);
+  transition:transform .75s ease-out;
 }
-.product-card:hover img { transform:scale(1.05); }
+.product-card:hover img { transform:scale(1.08); }
 
 .product-card .product-info {
   padding:1.5rem; flex:1; display:flex; flex-direction:column;
@@ -356,12 +358,19 @@ ul,ol { list-style:none; }
   padding:10px 20px; border-radius:var(--radius);
   font-size:.85rem; font-weight:600; text-align:center; display:block;
   box-shadow:0 2px 8px rgba(var(--primary-rgb),.06);
-  transition:all var(--transition);
+  transition:background .25s ease, color .25s ease, border-color .25s ease;
 }
+.product-card .btn-quote::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+}
+.product-card:hover .btn-quote,
 .product-card .btn-quote:hover {
   background:var(--primary); color:#fff; border-color:var(--primary);
 }
-.product-card .btn-quote:active { transform: scale(0.97); }
+.product-card .btn-quote:active { transform:none; }
 
 /* ---------- Category Cards (homepage) ---------- */
 .card {
@@ -797,21 +806,6 @@ a.blog-card:hover h3 { color:var(--accent); }
 }
 .key-takeaway p {
   font-size:.92rem; color:var(--text-light); margin-bottom:0; line-height:1.7;
-}
-
-/* ---------- Lightbox ---------- */
-.lightbox-overlay {
-  position:fixed; inset:0; background:rgba(0,0,0,.85);
-  display:flex; align-items:center; justify-content:center;
-  z-index:9999; cursor:pointer; padding:20px;
-}
-.lightbox-overlay img {
-  max-width:90vw; max-height:85vh; border-radius:var(--radius);
-  box-shadow:0 8px 40px rgba(0,0,0,.4);
-}
-.lightbox-close {
-  position:absolute; top:20px; right:24px;
-  background:none; border:none; color:#fff; font-size:2rem; cursor:pointer;
 }
 
 /* ---------- Floating Buttons ---------- */
@@ -2102,6 +2096,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   background:transparent; color:var(--primary); border:1.5px solid var(--border);
   font-weight:600;
 }
+.product-catalog .product-card:hover .btn-quote,
 .product-catalog .btn-quote:hover {
   background:var(--primary); color:#fff; border-color:var(--primary);
 }

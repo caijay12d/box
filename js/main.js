@@ -95,30 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /* ---------- Image Lightbox ---------- */
-  document.addEventListener('click', (e) => {
-    const img = e.target.closest('.lightbox-trigger');
-    if (img) {
-      e.preventDefault();
-      const src = img.src || img.getAttribute('data-original') || img.href;
-      if (!src) return;
-      const overlay = document.createElement('div');
-      overlay.className = 'lightbox-overlay';
-      overlay.innerHTML = `<button class="lightbox-close" aria-label="Close">&times;</button><img src="${src}" alt="Enlarged">`;
-      overlay.addEventListener('click', (ev) => { if (ev.target !== overlay.querySelector('img')) overlay.remove(); });
-      overlay.querySelector('.lightbox-close').addEventListener('click', () => overlay.remove());
-      document.body.appendChild(overlay);
-    }
-  });
-
-  // Close lightbox on Escape
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      const lb = document.querySelector('.lightbox-overlay');
-      if (lb) lb.remove();
-    }
-  });
-
   /* ---------- Contact Form: URL Param Handling ---------- */
   const contactForm = document.querySelector('.contact-form');
   if (contactForm) {
