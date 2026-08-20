@@ -113,9 +113,19 @@ document.addEventListener('DOMContentLoaded', () => {
       if (sel) sel.value = typeParam;
     }
 
+    const fileField = contactForm.querySelector('#design-file');
+    const fileName = contactForm.querySelector('.file-upload-name');
+    if (fileField && fileName) {
+      fileField.addEventListener('change', () => {
+        const chosen = fileField.files && fileField.files[0];
+        fileName.textContent = chosen ? chosen.name : (fileName.getAttribute('data-empty') || 'No file selected');
+        fileName.classList.toggle('has-file', !!chosen);
+      });
+    }
+
     if (params.get('intent') === 'review') {
       const messageField = contactForm.querySelector('#message');
-      const fileField = contactForm.querySelector('#design-file');
+      const reviewFileField = contactForm.querySelector('#design-file');
       const stepsBox = contactForm.closest('.contact-form-card')?.querySelector('.contact-steps');
       if (stepsBox) stepsBox.hidden = true;
       const promiseBox = document.createElement('div');
@@ -125,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (messageField && !messageField.value) {
         messageField.value = 'Please review our dieline / artwork and advise on structure, print feasibility, and quotation.';
       }
-      if (fileField) fileField.focus();
+      if (reviewFileField) reviewFileField.focus();
     }
 
     // Intercept form submission

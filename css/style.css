@@ -757,7 +757,41 @@ ul,ol { list-style:none; }
   flex:1; min-height:44px; display:flex; align-items:center;
 }
 .contact-form .file-upload { margin-bottom:1.2rem; }
-.contact-form .file-upload small { display:block; color:var(--text-light); margin-top:.2rem; }
+.contact-form .file-upload-title {
+  display:block; font-size:.88rem; font-weight:600; color:var(--primary); margin-bottom:8px;
+}
+.contact-form .file-upload-control {
+  display:flex; align-items:center; gap:12px; margin-bottom:0; cursor:pointer;
+  width:100%; padding:8px 12px; box-sizing:border-box;
+  border:1px solid var(--border); border-radius:var(--radius);
+  background:#fff;
+  transition:border-color var(--transition), box-shadow var(--transition);
+}
+.contact-form .file-upload-control:hover { border-color:var(--accent-light); }
+.contact-form .file-upload-control:focus-within {
+  outline:none; border-color:var(--accent);
+  box-shadow:0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
+}
+.contact-form .file-upload-control input[type="file"] {
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+.contact-form .file-upload-btn {
+  display:inline-flex; align-items:center; justify-content:center;
+  min-height:36px; padding:6px 14px; border-radius:var(--radius);
+  background:var(--bg-soft); color:var(--primary); border:1px solid var(--border);
+  font-size:.88rem; font-weight:600; flex-shrink:0;
+  transition:background var(--transition), border-color var(--transition), color var(--transition);
+}
+.contact-form .file-upload-control:hover .file-upload-btn,
+.contact-form .file-upload-control:focus-within .file-upload-btn {
+  border-color:var(--accent); color:var(--accent);
+}
+.contact-form .file-upload-name {
+  font-size:.88rem; color:var(--text-light); line-height:1.4; min-width:0;
+}
+.contact-form .file-upload-name.has-file { color:var(--text); font-weight:500; }
+.contact-form .file-upload small { display:block; color:var(--text-light); margin-top:.45rem; }
 .form-promise-review {
   margin-bottom:1.5rem; padding:1.25rem 1.35rem; background:var(--bg-soft);
   border-radius:var(--radius); border-left:4px solid var(--accent);
@@ -825,11 +859,8 @@ a.blog-card:hover h3 { color:var(--accent); }
 }
 .float-btn:hover { transform:scale(1.05); box-shadow:0 4px 16px rgba(0,0,0,0.2); }
 .float-btn-contact { background:var(--primary-light); }
-.float-btn-sample {
-  background:#fff; color:var(--primary);
-  box-shadow:0 4px 18px rgba(0,0,0,.18);
-}
-.float-btn-sample:hover { background:var(--accent-highlight); color:var(--primary); }
+.float-btn-whatsapp { background:#25d366; color:#fff; }
+.float-btn-whatsapp:hover { background:#1ebe5d; color:#fff; }
 .float-btn-label {
   position:absolute; right:62px; background:var(--primary); color:#fff;
   padding:6px 12px; border-radius:var(--radius); font-size:.8rem; font-weight:600;
@@ -1920,7 +1951,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   font-size:.92rem; color:var(--text-light); line-height:1.75; margin:0;
 }
 
-/* Hide secondary float contact — keep single sample entry */
+/* Hide secondary float email — keep a single WhatsApp entry */
 .float-btn-contact,
 .float-btn-contact-desktop { display:none !important; }
 
