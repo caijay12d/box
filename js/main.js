@@ -217,23 +217,30 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- Homepage Hero Video ---------- */
   const heroVideo = document.querySelector('.brand-hero-bg');
   if (heroVideo) {
-    const saveData = navigator.connection && navigator.connection.saveData;
-    if (saveData) {
+    const isNarrow = window.matchMedia('(max-width: 768px)').matches;
+
+    if (isNarrow) {
       heroVideo.removeAttribute('autoplay');
       heroVideo.pause();
     } else {
+      heroVideo.muted = true;
+      heroVideo.defaultMuted = true;
+      heroVideo.loop = true;
+      heroVideo.setAttribute('playsinline', '');
+      heroVideo.playsInline = true;
+
       const tryPlay = () => {
         const playPromise = heroVideo.play();
         if (playPromise && typeof playPromise.catch === 'function') {
           playPromise.catch(() => {});
         }
       };
-      if (heroVideo.readyState >= 2) {
-        tryPlay();
-      } else {
-        heroVideo.addEventListener('canplay', tryPlay, { once: true });
-        if (heroVideo.paused) tryPlay();
-      }
+      tryPlay();
+      ['loadedmetadata', 'loadeddata', 'canplay'].forEach((evt) => {
+        heroVideo.addEventListener(evt, tryPlay);
+      });
+      document.addEventListener('click', tryPlay, { once: true });
+
     }
   }
 
@@ -442,7 +449,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const href = popupTrigger.getAttribute('href') || '';
     const scenarioFromData = popupTrigger.getAttribute('data-popup-scenario');
-    const shouldInterceptHref = href.includes('contact.html?') && /[?&](quote|sample|type)=/.test(href);
+    const shouldInterceptHref = href.includes('contact.html?') && /[?&](quote|sample)=/.test(href);
     const shouldInterceptData = !!scenarioFromData;
 
     if (!shouldInterceptHref && !shouldInterceptData) return;
