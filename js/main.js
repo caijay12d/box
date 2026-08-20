@@ -217,37 +217,23 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- Homepage Hero Video ---------- */
   const heroVideo = document.querySelector('.brand-hero-bg');
   if (heroVideo) {
-    const heroSource = heroVideo.querySelector('source[data-src]');
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const saveData = navigator.connection && navigator.connection.saveData;
-    const allowHeroVideo = window.innerWidth > 768 && !prefersReducedMotion && !saveData;
-
-    const loadHeroVideo = () => {
-      if (!heroSource || heroVideo.dataset.loaded === 'true') return;
-      heroSource.src = heroSource.dataset.src;
-      heroVideo.dataset.loaded = 'true';
-      heroVideo.load();
-      const playPromise = heroVideo.play();
-      if (playPromise && typeof playPromise.catch === 'function') {
-        playPromise.catch(() => {});
-      }
-    };
-
-    if (allowHeroVideo) {
-      if ('IntersectionObserver' in window) {
-        const observer = new IntersectionObserver((entries) => {
-          if (entries.some(entry => entry.isIntersecting)) {
-            loadHeroVideo();
-            observer.disconnect();
-          }
-        }, { rootMargin: '200px 0px' });
-        observer.observe(heroVideo);
-      } else {
-        loadHeroVideo();
-      }
-    } else {
+    if (saveData) {
       heroVideo.removeAttribute('autoplay');
-      heroVideo.removeAttribute('loop');
+      heroVideo.pause();
+    } else {
+      const tryPlay = () => {
+        const playPromise = heroVideo.play();
+        if (playPromise && typeof playPromise.catch === 'function') {
+          playPromise.catch(() => {});
+        }
+      };
+      if (heroVideo.readyState >= 2) {
+        tryPlay();
+      } else {
+        heroVideo.addEventListener('canplay', tryPlay, { once: true });
+        if (heroVideo.paused) tryPlay();
+      }
     }
   }
 
